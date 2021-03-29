@@ -1,3 +1,42 @@
 body * {
   outline: 1px solid lightgrey;
 }
+// main-nav
+.container.main-nav{
+  border: 4px solid red;
+  text-align: center;
+}
+.main-nav li{
+  display: inline-block;
+}
+// End .main-nav
+// sum-menu
+.container.sub-menu{
+  border: 4px dotted green;
+}
+// End sub-menu
+// blocks
+.container.blocks{
+  border: 4px solid red;
+}
+.blocks span{
+  display: block;
+}
+.blocks p{
+  color:green;
+}
+// End blocks
+// container
+.container{
+  border: 4px solid red;
+}
+// End container
+// inline
+.container.inline{
+  border: 4px solid green;
+}
+.inline p{
+  color: blue;
+  display: inline-block;
+}
+// End inline
