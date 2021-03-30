@@ -7,8 +7,6 @@ body * {
 }
 .bottom{
   border: 2px solid blue;
-
-  
 }
 .top, .bottom{
   width: 40%;
@@ -33,4 +31,11 @@ a:visited{
 a{
   display: block;
   margin: 50px;
+}
+.center{
+  width: 50%;
+  height: 30px;
+  border: 3px solid greenyellow;
+  margin: 0 auto;
+  //margin: 50px auto; внизу и сверху по 50px
 }
