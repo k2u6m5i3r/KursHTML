@@ -32,3 +32,15 @@ footer{
   width: 50%;
 }
 
+.float{
+  border: 1px solid green;
+  width: 150px;
+  height: 150px;
+}
+.float-left{
+  float: right;
+}
+
+.float-right{
+  float: left;
+}
