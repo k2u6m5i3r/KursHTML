@@ -1,3 +1,4 @@
+@import "./partials/arctikal/arctikal.scss";
 body{
   margin: 0;
 }
@@ -15,10 +16,19 @@ footer{
   background-color: #fb9c06;
 }
 .for-columns{
-  font-size: 0;
+  display: flex;
 }
 .for-columns__item{
- display: inline-block;
+ 
  width: 25%;
- font-size: 1rem;
+  text-align: justify;
+  padding: 5px;
+
 }
+.two-columns{
+  display: flex;
+}
+.two-columns__item{
+  width: 50%;
+}
+
