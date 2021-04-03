@@ -1,11 +1,24 @@
+body{
+  margin: 0;
+}
 body * {
   outline: 1px solid lightgrey;
+  
 }
 .container{
   max-width: 1200px;
   margin: 0 auto;
-  height: 100px;
+  // height: 100px;
+  padding: 50px 0px;
 }
 footer{
   background-color: #fb9c06;
+}
+.for-columns{
+  font-size: 0;
+}
+.for-columns__item{
+ display: inline-block;
+ width: 25%;
+ font-size: 1rem;
 }
