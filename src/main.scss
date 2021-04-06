@@ -1,4 +1,5 @@
 @import "./partials/arctikal/arctikal.scss";
+@import "./partials/team-card/team-card.scss";
 body{
   margin: 0;
 }
@@ -15,10 +16,10 @@ body * {
 footer{
   background-color: #fb9c06;
 }
-.for-columns{
+.four-columns{
   display: flex;
 }
-.for-columns__item{
+.four-columns__item{
  
  width: 25%;
   text-align: justify;
@@ -31,7 +32,16 @@ footer{
 .two-columns__item{
   width: 50%;
 }
-
+.three-columns{
+  display: flex;
+  flex-wrap: wrap;
+  }
+  .three-columns__item{
+    //display: block;
+    width: 33.3%;
+    padding: 0 50px;
+    box-sizing: border-box;
+  }
 .float{
   border: 1px solid green;
   width: 150px;
@@ -56,4 +66,16 @@ footer{
   display: block;
   height: 100px;
   background-color: tomato;
+}
+
+.header{
+  margin: 40px 0 15px 0;
+  font-size:40px;
+  color:  #fb9c06;
+  text-align: center;
+  text-decoration: underline;
+  
+}
+.header.dots:after{
+  content: "...";
 }

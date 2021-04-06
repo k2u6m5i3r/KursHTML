@@ -1,0 +1,22 @@
+.team-card{
+    &__header{
+        color: #6e6d6b;
+        font-size: 22px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    &__position{
+        color: #fcb544;
+    }
+    &__img{
+        border-radius: 50%;
+        overflow: hidden;
+        border: 2px solid green; 
+        img{
+        max-width: 100%;
+        max-height: 100%;
+                   
+        }
+
+    }
+}

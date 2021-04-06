@@ -20,24 +20,40 @@
   </div>
   <main class="container">
     main
-    <div class="for-columns">
-      <div class="for-columns__item">
-        @@include('./partials/arctikal/_arctikal.html',{"artikleText":"Lorem, ipsum dolor sit amet " });
+    <div class="four-columns">
+      <div class="four-columns__item">
+        @@include('./partials/arctikal/_arctikal.html',{"artikleText":"Lorem, ipsum dolor sit amet " })
       </div>
-      <div class="for-columns__item">
-        @@include('./partials/arctikal/_arctikal.html',{"artikleText":"Lorem, ipsum dolor sit amet " });
+      <div class="four-columns__item">
+        @@include('./partials/arctikal/_arctikal.html',{"artikleText":"Lorem, ipsum dolor sit amet " })
       </div>
-      <div class="for-columns__item">
-        @@include('./partials/arctikal/_arctikal.html',{"artikleText":"Lorem, ipsum dolor sit amet " });
+      <div class="four-columns__item">
+        @@include('./partials/arctikal/_arctikal.html',{"artikleText":"Lorem, ipsum dolor sit amet " })
       </div>
-      <div class="for-columns__item">
-        @@include('./partials/arctikal/_arctikal.html',{"artikleText":"Lorem, ipsum dolor sit amet " });
+      <div class="four-columns__item">
+        @@include('./partials/arctikal/_arctikal.html',{"artikleText":"Lorem, ipsum dolor sit amet " })
       </div>
     </div>
-    <div class="clearfix float-wrapper">
-      <div class="float float-left">float-left</div>
-      <div class="float float-right">float-right</div>
-    </div>
+    <section class="section">
+      <header class="header">
+        Meet the team
+      </header>
+      <div class="three-columns">
+        <div class="three-columns__item">
+          @@include('./partials/team-card/_team-card.html'})
+        </div>
+        <div class="three-columns__item">
+          @@include('./partials/team-card/_team-card.html'})
+        </div>
+        <div class="three-columns__item">
+          @@include('./partials/team-card/_team-card.html'})
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="header dots">
+        Send us a message</div>
+    </section>
   </main>
   <footer>
     <div class="container">
