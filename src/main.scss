@@ -44,3 +44,16 @@ footer{
 .float-right{
   float: left;
 }
+// добавляет после элементом с контентом
+.clearfix:after{
+  content: "after";
+  clear:both;
+  display: block;
+}
+// добавляет перед элементом с контентом
+.clearfix:before{ 
+  content: "before";
+  display: block;
+  height: 100px;
+  background-color: tomato;
+}
