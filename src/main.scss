@@ -1,3 +1,19 @@
+@import './src/sprite.scss';
 body * {
   outline: 1px solid lightgrey;
+}
+.container{
+  margin: 0 auto;
+  width: 450px;
+  height: 450px;
+}
+.backgroung-image{
+  background-image:url(/img/dog.jpg) ;
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.content{
+  color: lime;
+  background: rgba( rgb(142, 18, 214), 0.7);
 }
