@@ -11,7 +11,21 @@
 
 <body>
   <header class="container">
-    header
+    <div class="logo">
+      <div class="logo__image"></div>
+      <div class="logo__text">
+        <p>orange <span>rabbit</span></p>
+      </div>
+    </div>
+    <nav class="menu">
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">work</a></li>
+        <li><a href="#">blog</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    </nav>
   </header>
   <div class="banner">
     <div class="container">
@@ -22,16 +36,17 @@
     main
     <div class="four-columns">
       <div class="four-columns__item">
-        @@include('./partials/arctikal/_arctikal.html',{"artikleText":"Lorem, ipsum dolor sit amet " })
+        
+        @@include('./partials/arctikal/_arctikal.html',{"artikleText":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat voluptas nisi eius laudantium, saepe deserunt a quos cumque iure, ab aperiam veniam veritatis distinctio animi, vero suscipit asperiores magni sit?" })
       </div>
       <div class="four-columns__item">
-        @@include('./partials/arctikal/_arctikal.html',{"artikleText":"Lorem, ipsum dolor sit amet " })
+        @@include('./partials/arctikal/_arctikal.html',{"artikleText":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat voluptas nisi eius laudantium, saepe deserunt a quos cumque iure, ab aperiam veniam veritatis distinctio animi, vero suscipit asperiores magni sit?" })
       </div>
       <div class="four-columns__item">
-        @@include('./partials/arctikal/_arctikal.html',{"artikleText":"Lorem, ipsum dolor sit amet " })
+        @@include('./partials/arctikal/_arctikal.html',{"artikleText":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat voluptas nisi eius laudantium, saepe deserunt a quos cumque iure, ab aperiam veniam veritatis distinctio animi, vero suscipit asperiores magni sit?" })
       </div>
       <div class="four-columns__item">
-        @@include('./partials/arctikal/_arctikal.html',{"artikleText":"Lorem, ipsum dolor sit amet " })
+        @@include('./partials/arctikal/_arctikal.html',{"artikleText":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat voluptas nisi eius laudantium, saepe deserunt a quos cumque iure, ab aperiam veniam veritatis distinctio animi, vero suscipit asperiores magni sit?" })
       </div>
     </div>
     <section class="section">
@@ -57,7 +72,9 @@
   </main>
   <footer>
     <div class="container">
-      footer
+      <div class="footer-text">
+        Copyright orange rabbit - designed by jake bhatt.
+      </div>
     </div>
   </footer>
 </body>
