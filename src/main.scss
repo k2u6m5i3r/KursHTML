@@ -1,3 +1,113 @@
 body * {
   outline: 1px solid lightgrey;
 }
+.block{
+  margin: 0 auto;
+  height: 200px;
+  width: 50%;
+}
+.red{
+  background-color: red;
+}
+.relative{
+   // нельзя через маржин потому-что нижний блок подниится
+  // margin-top: -50px;
+  // margin-left: -50px;
+  position: relative;
+  top: 150px; // движение блока вниз
+  left: 100px;  // движение блока вправо
+  //right: ; движение <-
+  //bottom: ; движение вниз 
+}
+.green{
+  background-color: green;
+
+  
+}
+.blue{
+  background-color: blue;
+}
+.required{
+  font-size: 30px;
+}
+//псевдо элемент
+.required:after{
+  content: "*";
+  display: inline;
+  color: red;
+  position: relative;
+ bottom: 5px;
+ right: 5px; 
+}
+.section{
+  
+  padding: 50px;
+}
+.btn-submit{
+  padding: 10px;
+  font-size: 18px;
+  padding: 15px;
+  font-weight: bold;
+  position: relative;
+  top:0;
+  left: 0;
+  //анимация работает с абсолютными величитами изменения с ховер топ и лефт 
+  transition: all 0.5s ease;
+}
+//псевдо класс
+.btn-submit:hover{
+  
+  background-color: red;
+  top:15px;
+  left: 15px;
+  //transform: translate(3px, 3px) scale(1.2); //движение кнопочки и увеличение
+}
+// absolut
+.absolut-weapper{
+  position: relative;
+}
+.absolut{
+  position:absolute;
+  top:50px;
+  left: 50px;
+}
+.tooltip{
+  position: relative;
+  cursor: pointer;
+
+  width: 50%;
+}
+.tooltip:hover:after{
+  content: attr(data-tip);
+}
+
+.tooltip:after{
+  //content: attr(data-tip);
+  display: inline-block;
+padding: 5px 10px 5px 10px;
+  border: 2px solid lightgrey;
+ border-radius: 7px;
+ position: absolute;
+ bottom: calc(100% + 15px);
+ left: calc(90% - 30px);
+ width: 100%;
+ //background-color: #ffffff7a;
+ //height: 200px;
+ max-width: 150px;
+ width: 100%;
+ background-image: url();
+ background-size: contain;
+ background-repeat: no-repeat;
+}
+.tooltip:hover:before{
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: lightgrey transparent transparent transparent;
+  position: absolute;
+  bottom: calc(100% + 7px);
+  left: calc(100% - 20px);
+
+}
