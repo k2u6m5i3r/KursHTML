@@ -80,8 +80,8 @@ header{
 .header.dots:after{
   content: "...";
 }
-.ul{
-  display: none;
+.menu.ul{
+  display: inline-block;
 }
 .footer-text{
   color: rgba(223, 209, 170, 0.822);
