@@ -1,3 +1,56 @@
 body * {
   outline: 1px solid lightgrey;
 }
+.menu{
+  &__item{
+    // width: 80px;
+    // height: 80px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+
+    &:hover{
+      //background-color: tomato;
+      top:2px;
+      left: 2px;
+    }
+  }
+  &__content{
+    display: none;
+    width: 120px;
+    height: 300px;
+    position: absolute;
+    top: 100%;
+    left: calc(100% - 30px);
+  }
+}
+.menu__item:hover{
+ // background-color: green;
+
+}
+.menu__item:hover > .menu__content{
+  background-color: rgba(209, 212, 13, 0.452);
+  display: block;
+}
+.sub-menu{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sub-menu__item{
+  padding: 7px  15px;
+}
+.menu__image{
+  max-width: 80px;
+  max-height: 80px;
+}
+.menu__description{
+  color: cornflowerblue;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.info {
+  display: none;
+}
