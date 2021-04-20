@@ -2,6 +2,8 @@
 @import "./partials/team-card/team-card.scss";
 body{
   margin: 0;
+  //display: flex;
+  //flex-direction:column;
 }
 body * {
   outline: 1px solid lightgrey;
@@ -68,20 +70,27 @@ footer{
   background-color: tomato;
 }
 
-header{
+// header{
+//   display: flex;
+//   justify-content: space-between;  
+// }
+
+header .logo__text{
   margin: 40px 0 15px 0;
   font-size:40px;
   color:  #fb9c06;
   text-align: center;
   text-decoration: underline;
-  display: flex;
-  justify-content: space-between;
+
 }
-.header.dots:after{
+ .header.dots:after{
   content: "...";
 }
-.menu.ul{
+.menu li{
   display: inline-block;
+}
+.menu a{
+  text-decoration: none;
 }
 .footer-text{
   color: rgba(223, 209, 170, 0.822);
