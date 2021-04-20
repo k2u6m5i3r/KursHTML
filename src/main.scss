@@ -68,16 +68,20 @@ footer{
   background-color: tomato;
 }
 
-.header{
+header{
   margin: 40px 0 15px 0;
   font-size:40px;
   color:  #fb9c06;
   text-align: center;
   text-decoration: underline;
-  
+  display: flex;
+  justify-content: space-between;
 }
 .header.dots:after{
   content: "...";
+}
+.ul{
+  display: none;
 }
 .footer-text{
   color: rgba(223, 209, 170, 0.822);
