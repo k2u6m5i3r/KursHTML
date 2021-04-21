@@ -121,9 +121,10 @@ header a{
 // end header
 // banner
 .banner{
-  border-top: 2px solid #fb9c06;
-  border-bottom: 2px solid #fb9c06;
+  border-top: 5px solid #fb9c06;
+  border-bottom: 5px solid #fb9c06;
   background-image: url('/img/kartinki-apelsina-15.jpg');
+  
   //height: 250px;
 }
 .banner__content{
@@ -140,11 +141,13 @@ header a{
   margin: 15px 15px; 
   background-color: rgb(224, 212, 186);
   color: rgb(236, 144, 24);
+  width: max-content;
 }
 .bottom{
   margin:15px 15px;
   background-color: rgb(236, 144, 24);
   color:rgb(224, 212, 186);
+  width: max-content;
 }
 
 //end banner
