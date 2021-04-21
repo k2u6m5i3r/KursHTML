@@ -124,11 +124,32 @@ header a{
   border-top: 2px solid #fb9c06;
   border-bottom: 2px solid #fb9c06;
   background-image: url('/img/kartinki-apelsina-15.jpg');
-  height: 250px;
+  //height: 250px;
 }
+.banner__content{
+  display: flex;
+  flex-direction: column;
+  justify-content:center; 
+  
+  padding: 10px 0;
+  text-transform: uppercase;
+  
+  font-size: 26px;
+}
+.top{
+  margin: 15px 15px; 
+  background-color: rgb(224, 212, 186);
+  color: rgb(236, 144, 24);
+}
+.bottom{
+  margin:15px 15px;
+  background-color: rgb(236, 144, 24);
+  color:rgb(224, 212, 186);
+}
+
 //end banner
 .loremForFooterBottom{
-  display: none;
+  display:none;
   padding: 10px;
   font-size: 36px;
 }
