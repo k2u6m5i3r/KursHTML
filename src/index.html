@@ -10,80 +10,83 @@
 </head>
 
 <body>
-  <header class="container">
-    <div class="logo">
-      <div class="logo__image"></div>
-      <div class="logo__text">
-        <p>orange <span>rabbit</span></p>
+  <div class="wrapper">
+    <header class="container">
+      <div class="logo">
+        <div class="logo__image"></div>
+        <div class="logo__text">
+          <p>orange <span>rabbit</span></p>
+        </div>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">work</a></li>
+          <li><a href="#">blog</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="banner">
+      <div class="container">
+        banner
       </div>
     </div>
-    <nav class="menu">
-      <ul>
-        <li><a href="#">home</a></li>
-        <li><a href="#">about</a></li>
-        <li><a href="#">work</a></li>
-        <li><a href="#">blog</a></li>
-        <li><a href="#">contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div class="banner">
-    <div class="container">
-      banner
-    </div>
+    <main class="container">
+      main
+      <div class="four-columns">
+        <div class="four-columns__item">
+          
+          @@include('./partials/arctikal/_arctikal.html',{"artikleText":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat voluptas nisi eius laudantium, saepe deserunt a quos cumque iure, ab aperiam veniam veritatis distinctio animi, vero suscipit asperiores magni sit?" })
+        </div>
+        <div class="four-columns__item">
+          @@include('./partials/arctikal/_arctikal.html',{"artikleText":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat voluptas nisi eius laudantium, saepe deserunt a quos cumque iure, ab aperiam veniam veritatis distinctio animi, vero suscipit asperiores magni sit?" })
+        </div>
+        <div class="four-columns__item">
+          @@include('./partials/arctikal/_arctikal.html',{"artikleText":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat voluptas nisi eius laudantium, saepe deserunt a quos cumque iure, ab aperiam veniam veritatis distinctio animi, vero suscipit asperiores magni sit?" })
+        </div>
+        <div class="four-columns__item">
+          @@include('./partials/arctikal/_arctikal.html',{"artikleText":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat voluptas nisi eius laudantium, saepe deserunt a quos cumque iure, ab aperiam veniam veritatis distinctio animi, vero suscipit asperiores magni sit?" })
+        </div>
+      </div>
+      <section class="section">
+        <header class="header">
+          Meet the team
+        </header>
+        <div class="three-columns">
+          <div class="three-columns__item">
+            @@include('./partials/team-card/_team-card.html'})
+          </div>
+          <div class="three-columns__item">
+            @@include('./partials/team-card/_team-card.html'})
+          </div>
+          <div class="three-columns__item">
+            @@include('./partials/team-card/_team-card.html'})
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="header dots">
+          Send us a message</div>
+      </section>
+      <div class="loremForFooterBottom">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque animi nesciunt molestias nam! Tempore, vero, necessitatibus quisquam vel dolores amet temporibus nemo tenetur aspernatur culpa eum officia architecto doloribus similique.
+        Ut, eum, error fugiat alias tempora voluptatibus quidem necessitatibus officiis quo non consequuntur deleniti nobis tenetur saepe corrupti ducimus? Ipsa tempore perferendis consequatur, omnis quibusdam quisquam. Cumque culpa omnis asperiores.
+        Exercitationem vel tempore facilis qui, eaque dolorem quis non ipsa libero fuga enim magnam. Nobis consectetur atque velit corporis, eaque aliquam deserunt laudantium quasi hic accusamus dolorem ut commodi assumenda?
+        Numquam voluptatum excepturi saepe, sint non eligendi at iusto, similique amet rem doloremque animi fugiat possimus tenetur beatae ipsam ducimus vel velit optio enim minima dolorum. Fugiat quidem sunt aspernatur.
+        Odio maxime veniam, nobis ipsa inventore tempore dolorum. Voluptatibus, molestiae quas qui nemo perspiciatis, nobis adipisci fugit laudantium quibusdam doloremque dolorem odit, ipsa sit repellat odio. Impedit sit rem suscipit.
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-text">
+          Copyright orange rabbit - designed by jake bhatt.
+        </div>
+      </div>
+    </footer>
   </div>
-  <main class="container">
-    main
-    <div class="four-columns">
-      <div class="four-columns__item">
-        @@include('./partials/arctikal/_arctikal.html',
-        {"artikleText":"vero suscipit asperiores magni sit?"
-       })
-      </div>
-      <div class="four-columns__item">
-        @@include('./partials/arctikal/_arctikal.html',
-        {"artikleText":"Lorem ipsum dolor sit amet, consect"
-       })
-      </div>
-      <div class="four-columns__item">
-        @@include('./partials/arctikal/_arctikal.html',
-        {"artikleText":"Lorem ipsum dolor sit amet, consect"
-       })
-      </div>
-      <div class="four-columns__item">
-        @@include('./partials/arctikal/_arctikal.html',
-        {"artikleText":"Lorem ipsum dolor sit amet, consecte" 
-      })
-      </div>
-    </div>
-    <section class="section">
-      <header class="header">
-        Meet the team
-      </header>
-      <div class="three-columns">
-        <div class="three-columns__item">
-          @@include('./partials/team-card/_team-card.html'})
-        </div>
-        <div class="three-columns__item">
-          @@include('./partials/team-card/_team-card.html'})
-        </div>
-        <div class="three-columns__item">
-          @@include('./partials/team-card/_team-card.html'})
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="header dots">
-        Send us a message</div>
-    </section>
-  </main>
-  <footer>
-    <div class="container">
-      <div class="footer-text">
-        Copyright orange rabbit - designed by jake bhatt.
-      </div>
-    </div>
-  </footer>
+  
 </body>
 
 </html>

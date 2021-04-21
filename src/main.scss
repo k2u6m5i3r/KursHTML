@@ -1,21 +1,30 @@
 @import "./partials/arctikal/arctikal.scss";
 @import "./partials/team-card/team-card.scss";
+html{
+  height: 100%;
+}
 body{
+  height: 100%;
+  width: 100%;
   margin: 0;
+
 }
 body * {
   outline: 1px solid lightgrey;
   
 }
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 .container{
   max-width: 1200px;
   margin: 0 auto;
   // height: 100px;
-  padding: 50px 0px;
+  padding: 20px 0px;
 }
-footer{
-  background-color: #fb9c06;
-}
+
 .four-columns{
   display: flex;
 }
@@ -78,9 +87,48 @@ footer{
 .header.dots:after{
   content: "...";
 }
+// footer
+footer{
+  background-color: #fb9c06;
+}
 .footer-text{
   color: rgba(223, 209, 170, 0.822);
   text-transform: uppercase;
   font-size: 24px;
   text-align: center;
+}
+// end footer
+
+main.container{
+  flex: 1 1 auto;
+}
+header.container{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+header ul{
+  list-style-type: none;
+  display: flex;
+  
+}
+header li{
+  padding: 5px;
+}
+header a{
+  text-decoration: none;
+}
+// end header
+// banner
+.banner{
+  border-top: 2px solid #fb9c06;
+  border-bottom: 2px solid #fb9c06;
+  background-image: url('/img/kartinki-apelsina-15.jpg');
+  height: 250px;
+}
+//end banner
+.loremForFooterBottom{
+  display: none;
+  padding: 10px;
+  font-size: 36px;
 }
