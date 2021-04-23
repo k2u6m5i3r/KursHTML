@@ -1,32 +1,38 @@
 @import "./partials/arctikal/arctikal.scss";
 @import "./partials/team-card/team-card.scss";
+html{
+  height: 100%;
+}
 body{
+  height: 100%;
+  width: 100%;
   margin: 0;
-  //display: flex;
-  //flex-direction:column;
+
 }
 body * {
   outline: 1px solid lightgrey;
   
 }
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 .container{
   max-width: 1200px;
   margin: 0 auto;
   // height: 100px;
-  padding: 50px 0px;
+  padding: 20px 0px;
 }
-footer{
-  background-color: #fb9c06;
-}
+
 .four-columns{
   display: flex;
 }
 .four-columns__item{
  
- width: 25%;
+  width: 25%;
   text-align: justify;
   padding: 5px;
-
 }
 .two-columns{
   display: flex;
@@ -70,31 +76,83 @@ footer{
   background-color: tomato;
 }
 
-// header{
-//   display: flex;
-//   justify-content: space-between;  
-// }
-
-header .logo__text{
+.header{
   margin: 40px 0 15px 0;
   font-size:40px;
   color:  #fb9c06;
   text-align: center;
   text-decoration: underline;
-
+  
 }
- .header.dots:after{
+.header.dots:after{
   content: "...";
 }
-.menu li{
-  display: inline-block;
-}
-.menu a{
-  text-decoration: none;
+// footer
+footer{
+  background-color: #fb9c06;
 }
 .footer-text{
   color: rgba(223, 209, 170, 0.822);
   text-transform: uppercase;
   font-size: 24px;
   text-align: center;
+}
+// end footer
+
+main.container{
+  flex: 1 1 auto;
+}
+header.container{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+header ul{
+  list-style-type: none;
+  display: flex;
+  
+}
+header li{
+  padding: 5px;
+}
+header a{
+  text-decoration: none;
+}
+// end header
+// banner
+.banner{
+  border-top: 5px solid #fb9c06;
+  border-bottom: 5px solid #fb9c06;
+  background-image: url('/img/kartinki-apelsina-15.jpg');
+  
+  //height: 250px;
+}
+.banner__content{
+  display: flex;
+  flex-direction: column;
+  justify-content:center; 
+  
+  padding: 10px 0;
+  text-transform: uppercase;
+  
+  font-size: 26px;
+}
+.top{
+  margin: 15px 15px; 
+  background-color: rgb(224, 212, 186);
+  color: rgb(236, 144, 24);
+  width: max-content;
+}
+.bottom{
+  margin:15px 15px;
+  background-color: rgb(236, 144, 24);
+  color:rgb(224, 212, 186);
+  width: max-content;
+}
+
+//end banner
+.loremForFooterBottom{
+  display:none;
+  padding: 10px;
+  font-size: 36px;
 }

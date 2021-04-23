@@ -11,13 +11,7 @@
     &__img{
         border-radius: 50%;
         overflow: hidden;
-        border: 2px solid #fcb544; 
-        padding: calc(50% - 2px);
-        // background-image: url('/src/img/korotkosherstnyj_karlikovyj_krolik.jpg');
-        background-position: 50%;
-        background-size: cover;
-    }
-    &__content{
-        
+        border: 2px solid green; 
+   
     }
 }
