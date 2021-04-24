@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'Google-font-sufer';
+src: url('/fonts/OriginalSurfer-Regular.ttf');
+}
+
 body * {
   outline: 1px solid lightgrey;
+}
+
+.custom-font{
+  font-family: 'Original Surfer', 'Google-font-sufer' ,sans-serif;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 2.5rem;//межстрочный интервал
+  letter-spacing: 10px;//арстояние между буквами
+  text-decoration: overline;
+  text-transform: uppercase;
+  color:lawngreen;
+  text-shadow: 2px 2px rgb(14, 171, 233);
+}
+.inset{
+  text-transform: initial;
 }
