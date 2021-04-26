@@ -1,3 +1,37 @@
+body, html{
+  height: 100%;
+}
+*{
+  margin:0;
+}
 body * {
   outline: 1px solid lightgrey;
+}
+.container{
+  display: flex; 
+  flex-direction: column;
+  height: 100%;
+  // Увеличить размер шрифта всех потомков
+  font-size: 24px;
+}
+header{
+ padding: 10px;
+ border: 5px solid rgb(255, 17, 17);
+ background-color: rgb(199, 97, 97);
+}
+.main{
+ padding: 10px;
+ border: 5px solid rgb(0, 0, 255);
+ background-color: rgb(96, 189, 247);
+ /* растягивать размер блока как возможно  */
+ flex: 1 1 auto; 
+ 
+}
+.contentForScroll{
+  display: none;
+}
+footer{
+ padding: 10px;
+ border: 5px solid rgb(241, 173, 44);
+ background-color: rgb(180, 116, 21);
 }
