@@ -1,0 +1,16 @@
+.menu-item {
+    display: inline-block;
+    padding: 0 10px;
+    text-decoration: none;
+    &:hover{
+        position: relative;
+        top: 2px;
+        left: 2px;
+        opacity: 0.5;
+    }
+
+    &__description{
+        text-align: center;
+        color: darkgray;
+    }
+}

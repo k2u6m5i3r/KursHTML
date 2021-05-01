@@ -14,13 +14,13 @@
   <div class="wrapper">
     <header class="container">
       <div class="logo">
-        <div class="logo__image"></div>
+        <div class="logo__image"><img src="./img/LogoOrangeRabbit.png" alt="картинка логотипа"></div>
         <div class="logo__text">
           <p>orange <span>rabbit</span></p>
         </div>
       </div>
       <nav class="menu">
-        <ul>
+        <!-- <ul>
           <li>
             <div class="sprite home"></div>
             <a href="#">home</a>
@@ -29,7 +29,18 @@
           <li><a href="#">work</a></li>
           <li><a href="#">blog</a></li>
           <li><a href="#">contact</a></li>
-        </ul>
+        </ul> -->
+
+        @@include('./partials/menu-items/_menu-item.html',{ "item": "work" })
+
+
+        @@include('./partials/menu-items/_menu-item.html',{ "item": "blog" })
+
+
+        @@include('./partials/menu-items/_menu-item.html',{ "item": "home" })
+        @@include('./partials/menu-items/_menu-item.html',{ "item": "mail" })
+        @@include('./partials/menu-items/_menu-item.html',{ "item": "about" })
+
       </nav>
     </header>
     <div class="banner">
@@ -78,6 +89,9 @@
 
       </div>
     </main>
+    <div class="about">
+
+    </div>
     <footer>
       <div class="container">
         <div class="footer-text">

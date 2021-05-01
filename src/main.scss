@@ -1,5 +1,7 @@
 @import "./partials/arctikal/arctikal.scss";
 @import "./partials/team-card/team-card.scss";
+@import "./partials/menu-items/menu-item.scss";
+@import "./sprite.scss";
 html{
   height: 100%;
 }
@@ -139,17 +141,40 @@ header a{
 }
 .top{
   margin: 15px 15px; 
+  padding: 10px;
   background-color: rgb(224, 212, 186);
   color: rgb(236, 144, 24);
   width: max-content;
 }
 .bottom{
   margin:15px 15px;
+  padding: 10px;
   background-color: rgb(236, 144, 24);
   color:rgb(224, 212, 186);
   width: max-content;
 }
+.logo{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  
+}
+.logo__image{
+  padding-right: 10px;
+}
+.logo__text{
+  text-align: center;
+  color: #fb9c06;
+  font-weight: 600;
+}
+.logo__text span{
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+  color: grey;
+  font-weight: bold;
 
+}
 //end banner
 .loremForFooterBottom{
   display:none;
