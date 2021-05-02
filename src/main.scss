@@ -12,7 +12,7 @@ body{
 
 }
 body * {
-  outline: 1px solid lightgrey;
+ // outline: 1px solid lightgrey;
   
 }
 .wrapper{
@@ -24,7 +24,7 @@ body * {
   max-width: 1200px;
   margin: 0 auto;
   // height: 100px;
-  padding: 20px 0px;
+  padding: 1px 0px;
 }
 
 .four-columns{
@@ -34,7 +34,7 @@ body * {
  
   width: 25%;
   text-align: justify;
-  padding: 5px;
+  padding: 15px;
 }
 .two-columns{
   display: flex;
@@ -91,20 +91,26 @@ body * {
 }
 // footer
 footer{
+
   background-color: #fb9c06;
 }
 .footer-text{
+  
   color: rgba(223, 209, 170, 0.822);
   text-transform: uppercase;
   font-size: 24px;
   text-align: center;
+  padding: 20px;
 }
 // end footer
 
 main.container{
   flex: 1 1 auto;
 }
+//header
+
 header.container{
+  height: 130px;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -122,22 +128,26 @@ header a{
 }
 // end header
 // banner
-.banner{
-  border-top: 5px solid #fb9c06;
-  border-bottom: 5px solid #fb9c06;
-  background-image: url('/img/kartinki-apelsina-15.jpg');
-  
-  //height: 250px;
-}
-.banner__content{
+.banner .container{
+  height: 405px;
   display: flex;
   flex-direction: column;
   justify-content:center; 
+  align-items: flex-start;
+}
+.banner {
   
+  border-top: 5px solid #fb9c06;
+  border-bottom: 5px solid #fb9c06;
+  background-image: url('./img/banner.jpg');
+  background-size: cover;
+}
+
+.banner__content{
+
   padding: 10px 0;
   text-transform: uppercase;
-  
-  font-size: 26px;
+  font-size: 52px;
 }
 .top{
   margin: 15px 15px; 
@@ -165,6 +175,7 @@ header a{
 .logo__text{
   text-align: center;
   color: #fb9c06;
+  font-size: 36px;
   font-weight: 600;
 }
 .logo__text span{
@@ -181,3 +192,15 @@ header a{
   padding: 10px;
   font-size: 36px;
 }
+// form
+.button{
+  height: 40px;
+  width: 175px;
+  background-color: #fb9c06;
+  border-bottom: 2px solid #725e3e;
+  font-size: 25px;
+}
+.form{
+  display: block;
+}
+//end form
