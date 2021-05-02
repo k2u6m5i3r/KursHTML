@@ -1,7 +1,9 @@
 .menu-item {
     display: inline-block;
     padding: 0 10px;
+    margin: 10px;
     text-decoration: none;
+    
     &:hover{
         position: relative;
         top: 2px;
@@ -10,6 +12,7 @@
     }
 
     &__description{
+        font-size: 22px;
         text-align: center;
         color: darkgray;
     }

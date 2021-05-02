@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="./sprite.scss">
   <title>First project</title>
   <script src="./js/main.js" defer></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
@@ -20,27 +22,11 @@
         </div>
       </div>
       <nav class="menu">
-        <!-- <ul>
-          <li>
-            <div class="sprite home"></div>
-            <a href="#">home</a>
-          </li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">work</a></li>
-          <li><a href="#">blog</a></li>
-          <li><a href="#">contact</a></li>
-        </ul> -->
-
         @@include('./partials/menu-items/_menu-item.html',{ "item": "work" })
-
-
         @@include('./partials/menu-items/_menu-item.html',{ "item": "blog" })
-
-
         @@include('./partials/menu-items/_menu-item.html',{ "item": "home" })
         @@include('./partials/menu-items/_menu-item.html',{ "item": "mail" })
         @@include('./partials/menu-items/_menu-item.html',{ "item": "about" })
-
       </nav>
     </header>
     <div class="banner">
@@ -50,19 +36,18 @@
       </div>
     </div>
     <main class="container">
-      main
       <div class="four-columns">
         <div class="four-columns__item">
-          @@include('./partials/arctikal/_arctikal.html',{"artikleText":"Lorem ipsum dolor sit amet, consectetur" })
+          @@include('./partials/arctikal/_arctikal.html',{"artikleText":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cumque magni aut, autem ab numquam iste nostrum dolor necessitatibus vel optio incidunt impedit ea eum. Inventore, est! Fuga, nam omnis. " })
         </div>
         <div class="four-columns__item">
-          @@include('./partials/arctikal/_arctikal.html',{"artikleText":"Lorem ipsum dolor sit amet, consectetur" })
+          @@include('./partials/arctikal/_arctikal.html',{"artikleText":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cumque magni aut, autem ab numquam iste nostrum dolor necessitatibus vel optio incidunt impedit ea eum. Inventore, est! Fuga, nam omnis." })
         </div>
         <div class="four-columns__item">
-          @@include('./partials/arctikal/_arctikal.html',{"artikleText":"Lorem ipsum dolor sit amet, consectetur" })
+          @@include('./partials/arctikal/_arctikal.html',{"artikleText":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cumque magni aut, autem ab numquam iste nostrum dolor necessitatibus vel optio incidunt impedit ea eum. Inventore, est! Fuga, nam omnis." })
         </div>
         <div class="four-columns__item">
-          @@include('./partials/arctikal/_arctikal.html',{"artikleText":"Lorem ipsum dolor sit amet, consectetur" })
+          @@include('./partials/arctikal/_arctikal.html',{"artikleText":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cumque magni aut, autem ab numquam iste nostrum dolor necessitatibus vel optio incidunt impedit ea eum. Inventore, est! Fuga, nam omnis." })
         </div>
       </div>
       <section class="section">
@@ -71,27 +56,57 @@
         </header>
         <div class="three-columns">
           <div class="three-columns__item">
-            @@include('./partials/team-card/_team-card.html'})
+            @@include('./partials/team-card/_team-card.html',
+            {
+              "name":"Hoff",
+              "nameProfession":"- Load Designer",
+              "pathImage":"./img/loshad.jpg",
+              "text":"Hoof is our most talanted designer.  However he`s not the talka"
+            })
           </div>
           <div class="three-columns__item">
-            @@include('./partials/team-card/_team-card.html'})
+            @@include('./partials/team-card/_team-card.html',
+            {
+              "name":"Nibs",
+              "nameProfession":"- CEO/Director",
+              "pathImage":"./img/krolik.jpg",
+              "text":"Nibs is our go to woman. She’s the ceo/director of orange rabbi"
+            })
           </div>
           <div class="three-columns__item">
-            @@include('./partials/team-card/_team-card.html'})
+            @@include('./partials/team-card/_team-card.html',
+            {
+              "name":"Squawk",
+              "nameProfession":"- Developer",
+              "pathImage":"./img/straus.jpg",
+              "text":"Squawk is no social bunny. But when it comes to programming he "
+            })
           </div>
         </div>
       </section>
       <section class="section">
         <div class="header dots">
-          Send us a message</div>
+          Send us a message
+        </div>
+        <form action="" class="infoForForm">
+          <div class="form-message">
+              <label for="name">Name </label><input class="form-size" type="text" id="name" required>
+          </div>
+          <div class="form-message">
+              <label for="email">Email </label><input class="form-size" type="email" id="email" required>
+          </div>
+          <div class="form-message">
+              <label for="message">Message </label><textarea class="form-size" id="message"
+                  required></textarea>
+          </div>
+          <div class="form-message">
+              <input class="btn" type="submit" value="Отправить сообщение">
+          </div>
+      </form>
       </section>
-      <div class="loremForFooterBottom">
 
-      </div>
     </main>
-    <div class="about">
 
-    </div>
     <footer>
       <div class="container">
         <div class="footer-text">
