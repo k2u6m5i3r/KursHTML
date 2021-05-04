@@ -30,6 +30,34 @@
   <i class="fab fa-canadian-maple-leaf fa-9x"></i>
   <i class="fas fa-broadcast-tower fa-9x"></i>
   <i class="fas fa-car-battery fa-9x"></i>
+  <div class="fa-presudo">
+
+  </div>
+  @@include('./partials/news/_news.html',{
+  "newsPicturePath":"./img/cup50.png",
+  "text":"Text",
+  "direction":"",
+  "modificator":"--big-image"
+  })
+  <div class="two-colum">
+    <div class="two-colum-item">
+      @@include('./partials/news/_news.html',{
+      "newsPicturePath":"./img/cup50.png",
+      "text":"Text",
+      "direction":"",
+      "modificator":"--big-image"
+      })
+
+    </div>
+    <div class="two-colum-item">
+      @@include('./partials/news/_news.html',{
+      "newsPicturePath":"./img/cup50.png",
+      "text":"Text",
+      "direction":"",
+      "modificator":"--big-image"
+      })
+    </div>
+  </div>
 </body>
 
 </html>

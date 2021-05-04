@@ -1,3 +1,4 @@
+@import './partials/news/news.scss';
 body, html{
   height: 100%;
 }
@@ -86,4 +87,15 @@ bottom: 10px;
 .fa-car-battery{
   color: darkred;
   background-color: yellowgreen;
+}
+.fa-presudo:before{
+  content: '\f834';
+  font-family: "Font Awesome 5 Brands";
+  font-size: 5rem;
+
+}
+
+.two-colum{
+  display: flex;
+  
 }
