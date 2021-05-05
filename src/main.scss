@@ -12,7 +12,10 @@ body{
   font-family: 'Noto Sans JP', sans-serif;
 }
 body * {
+
   outline: 1px solid lightgrey;
+
+
 }
 .wrapper{
   display: flex;
@@ -147,8 +150,10 @@ header a{
   padding: 10px 0;
   text-transform: uppercase;
   font-size: 52px;
+
   font-weight: 600;
   letter-spacing: -1px;
+
 
 }
 .top{
@@ -189,22 +194,13 @@ header a{
 
 }
 //end banner
-.loremForFooterBottom{
-  display:none;
-  padding: 10px;
-  font-size: 36px;
-}
+
 // form
-.button{
-  height: 40px;
-  width: 175px;
-  background-color: #fb9c06;
-  border-bottom: 2px solid #725e3e;
-  font-size: 25px;
-}
+
 .form{
   display: block;
 }
+
 .infoForForm {
   position: relative;
  max-width: 100%;
@@ -231,7 +227,7 @@ label{
 .btn{
  position: absolute;
  top:80%;
- left: 50%;
+ left: 80%;
  width: 200px;
  height: 45px;
  background-color: orange;
