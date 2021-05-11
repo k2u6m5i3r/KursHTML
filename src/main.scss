@@ -1,3 +1,86 @@
 body * {
   outline: 1px solid lightgrey;
 }
+html,body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 5px;
+  width: 1000px;
+  height: 100%;
+  overflow: hidden;
+
+  background-color: lawngreen;
+}
+// .topNews{
+//   height: 30%;
+// }
+// .midleNews{
+//   height: 30%;
+// }
+/*mainContent */
+.mainContent{
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: lightblue;
+}
+/*mainContent END*/
+// content
+.content{
+  display: flex;
+  flex-direction: column;
+  
+  width:640px;
+  
+  padding: 5px;
+  
+  background-color: lightslategray;
+}
+.contentTop{
+  flex: 1 1 auto;
+  background-color: palegreen;
+}
+.contentBootom{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  flex: 1 1 auto;
+  background-color: orchid;
+}
+.contentBootom__left{
+  padding: 5px;
+}
+.contentBootom__video{
+  width: 150px;
+}
+
+// content END
+// subContent
+.subContent{
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  padding: 5px;
+  background-color: lime;
+}
+.viewTop{
+  flex: 1 1 auto;
+  background-color: mediumorchid;
+}
+.viewBootom{
+  flex: 1 1 auto;
+  background-color: orange;
+}
+// subContent END
+// footer review
+.review{
+  background-color: hotpink;
+  height: 250px;
+}
+// footer review END
