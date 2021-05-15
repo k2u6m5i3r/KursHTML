@@ -36,6 +36,7 @@
         <div class="subContent">
           <div class="viewTop">
            <p>Видео</p> 
+           @@include('./partials/news-preview/_news-preview.html',{"name":"Знакомство", "pathImage":"./img/footer_1.jpg", "text":"Отношение актёров в кино и реальной жизни" })
           </div>
           <div class="viewBootom">
             <p>Интересные статьи</p> 
@@ -44,7 +45,14 @@
       </div>
       <div class="review"><!-- //footer -->
         <p>Обзор</p>
-        <p>Слайдер из видео, но его не буддет</p>
+        <div class="review__news">
+          @@include('./partials/news-preview/_news-preview.html',{"name":"Знакомство", "pathImage":"./img/footer_1.jpg", "text":"Отношение актёров в кино и реальной жизни" })
+          @@include('./partials/news-preview/_news-preview.html',{"name":"Знакомство", "pathImage":"./img/footer_2.jpg", "text":"Отношение актёров в кино и реальной жизни" })
+          @@include('./partials/news-preview/_news-preview.html',{"name":"Знакомство", "pathImage":"./img/footer_3.jpg", "text":"Отношение актёров в кино и реальной жизни" })
+          @@include('./partials/news-preview/_news-preview.html',{"name":"Приколы", "pathImage":"./img/footer_4.jpg", "text":"Отношение актёров в кино и реальной жизни" })
+          @@include('./partials/news-preview/_news-preview.html',{"name":"Авто", "pathImage":"./img/footer_5.jpg", "text":"Отношение актёров в кино и реальной жизни" })
+        </div>
+
       </div>    
     </div>  
   </body>
