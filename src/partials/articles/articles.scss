@@ -9,5 +9,6 @@
     }
     &__description{
         display:inline-block;
+        overflow-wrap: break-word;
     }
 }
