@@ -13,15 +13,25 @@
         <div class="content">
           <div class="contentTop">
             <div class="hotNews">
-              <p>Полоса с новостями</p>
+              <div class="hotNews__content">
+                <p>Hot themes</p>
+                <a href="">EURO-2016 Playoffs</a>
+                <a href="">El’ Classico</a>
+              </div>
+
             </div>
             <div class="slider">
               <p>Slider которого нет!!!</p>
             </div>
             <div class="mainNews">
               <p>Main News</p> 
+              <div class="mainNews__content">
+                @@include('./partials/main-articles/_main-articles.html',{"name":"", "pathImage":"./img/footer_1.jpg", "text":"The FIFA Ballon d'Or is an annual association football award given by FIFA" })
+                @@include('./partials/main-articles/_main-articles.html',{"name":"", "pathImage":"./img/footer_1.jpg", "text":"Messi got some balloons" })
+                @@include('./partials/main-articles/_main-articles.html',{"name":"", "pathImage":"./img/footer_1.jpg", "text":"CR7 also, but not so much" })
+                @@include('./partials/main-articles/_main-articles.html',{"name":"", "pathImage":"./img/footer_1.jpg", "text":"Ribery got vase!" })
+              </div>
             </div>
-            
           </div>
           <div class="contentBootom">
             <div class="contentBootom__left">
@@ -34,11 +44,13 @@
           </div>
         </div>
         <div class="subContent">
-          <div class="viewTop">
+          <div class="viewTop"> 
+            <!-- Верхняя часть экрана с видео -->
            <p>Видео</p> 
-           @@include('./partials/news-preview/_news-preview.html',{"name":"Знакомство", "pathImage":"./img/footer_1.jpg", "text":"Отношение актёров в кино и реальной жизни" })
+           @@include('./partials/articles/_articles.html',{"modificator":"bigImage", "pathImage":"./img/footer_1.jpg", "text":"Отношение актёров в кино и реальной жизни" })
           </div>
           <div class="viewBootom">
+            <!-- средняя часть экрана со статьями -->
             <p>Интересные статьи</p> 
           </div>
         </div>

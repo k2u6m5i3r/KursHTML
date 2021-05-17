@@ -1,0 +1,13 @@
+.articles_video{
+    width: 360px;
+    &__img{
+        display: inline-block;
+        background-size: cover;
+        width: 120px;
+        height: 95px;
+
+    }
+    &__description{
+        display:inline-block;
+    }
+}

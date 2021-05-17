@@ -1,26 +1,18 @@
-.news-preview{
+.main-articles{
     //display: none;
     box-sizing: border-box;
     width: 140px;
     padding: 5px;
-
-    &__header{
-        color: #c70000;
-        font-size: 14px;
-        margin-bottom: 20px;
-        text-align: left;
-    }
-
     &__img{
         overflow: hidden;
         height: 95px;
+        width: 140px;
         background-size: cover;
 
     }
-
     &__description{
         font-size: 14px;
-        color:#3d76cc;
+        color:#333;
     
     }
 }
