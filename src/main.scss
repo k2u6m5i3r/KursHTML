@@ -194,19 +194,9 @@ header a{
 
 }
 //end banner
-.loremForFooterBottom{
-  display:none;
-  padding: 10px;
-  font-size: 36px;
-}
+
 // form
-.button{
-  height: 40px;
-  width: 175px;
-  background-color: #fb9c06;
-  border-bottom: 2px solid #725e3e;
-  font-size: 25px;
-}
+
 .form{
   display: block;
 }
@@ -236,8 +226,10 @@ label{
 
 .btn{
  position: absolute;
+
  top:70%;
- left: 80%;
+
+  left: 80%;
  width: 200px;
  height: 45px;
  background-color: orange;
