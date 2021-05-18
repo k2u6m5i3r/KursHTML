@@ -1,3 +1,32 @@
+// @import "./reseter.scss"
+@import "./normalize.scss";
 body * {
   outline: 1px solid lightgrey;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  &__input{
+    font-size: 16px;
+    padding: 5px 6px;
+  }
+  &__submit{
+    background-color: #fff;
+  }
+  &__text-input{
+    padding: 5px 7px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  &:focus,
+  &:active{
+    border-color:  blue;
+  }
+  &.error{
+    border-color: red;
+  }
+
+}
+#bigText{
+  resize: none;
 }

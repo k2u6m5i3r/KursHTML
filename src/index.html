@@ -1,16 +1,50 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./main.scss">
-    <title>First project</title>
-    <script src="./js/main.js" defer></script>
-  </head>
-  <body>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./main.scss">
+  <title>First project</title>
+  <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+  <form action="/test" method="get" class="form">
+    <label for="first-name" class="form__input "> <span>First name</span>
+      <input type="text" name="first-name" value="Andrei" maxlength="15" class="form__text-input">
+    </label>
+    <label for="phone-number" class="form__input "> <span>Phone number</span>
+      <input type="text" name="phone-number" class="form__text-input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}">
+    </label>
+    <input type="text" name="first-name" value="10" max="11" min="0">
+    <input type="text" name="last-name" placeholder="Imya">
+    <label for="" class="form__input">
+      <span>yes</span>
+      <input type="radio" name="radio" value="yes">
+    </label>
+    <label for="" class="form__input">
+      <span>no</span>
+      <input type="radio" name="radio" value="no">
+    </label>
+    <label for="" class="form__input rasmer">
+      <span>no sure</span>
+      <input type="radio" name="radio" value="no sure">
+    </label>
+    <label for="check">Yes
+      <input id="check" type="checkbox" name="checkbox" value="yes">
+    </label>
+    <input type="checkbox" name="checkbox1" value="no">
+    <input type="checkbox" name="checkbox2" value="no sure">
+
+    <textarea name="bigText" id="bigText" cols="30" rows="10"></textarea>
+    <input type="submit" class="form__submit" value="submit">
+    <input list="datalist">
+
+    <button>Btn submit</button>
+
+  </form>
+  <input class="" type="text">
+</body>
+
 </html>
-
-
-
-
