@@ -12,10 +12,7 @@ body{
   font-family: 'Noto Sans JP', sans-serif;
 }
 body * {
-
-  // outline: 1px solid lightgrey;
-
-
+  //  outline: 1px solid lightgrey;
 }
 .wrapper{
   display: flex;
@@ -202,7 +199,7 @@ header a{
 }
 
 .infoForForm {
-  position: relative;
+  // position: relative;
  max-width: 100%;
  height: 250px;
  //margin:  0 auto;
@@ -213,27 +210,50 @@ label{
   width: 150px;
 }
 .form-message{
+  position: relative;
   display: flex;
   padding-bottom: 15px;
   font-size: 24px;
   color:#fb9c06;
   
 }
+.form-style{
+  border-top: 1px solid #d2d0cf;
+  border-left: 4px solid #d2d0cf;
+  border-right: 0px solid #d2d0cf;
+  background-color: #f8f7f6
+}
+.form-input{
+  // display: inline-block;
+  width: 75%;
+  
+}
+.form-textarea{
+  width: 75%;
+  resize: none;
+}
 .form-size{
   width: 100%;
   //border-left: 3px solid grey;
 }
-
+.form-label{
+  display: inline-block;
+  width: 20%;
+}
 .btn{
  position: absolute;
-
  top:70%;
+ left: 70%;
+ font-family: 'Noto Sans JP', sans-serif;
+ font-size: 24px;
+ font-weight: 100;
+ color: #fff;
 
-  left: 80%;
  width: 200px;
  height: 45px;
- background-color: orange;
- border-bottom: 5px solid orangered;
+ 
+ background-color: #fb9c06;
+ border-bottom: 2px solid #cc830f;
  border-radius: 5px;
 }
 //end form
