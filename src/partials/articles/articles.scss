@@ -1,14 +1,15 @@
 .articles_video{
+    display: flex;
     width: 360px;
+    padding: 5px;
     &__img{
-        display: inline-block;
+        // display: inline-block;
         background-size: cover;
-        width: 120px;
-        height: 95px;
-
+        
     }
     &__description{
-        display:inline-block;
+        // display:inline-block;
+        padding: 3px;
         overflow-wrap: break-word;
     }
 }
