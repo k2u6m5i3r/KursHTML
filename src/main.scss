@@ -1,3 +1,9 @@
 body * {
   outline: 1px solid lightgrey;
 }
+.container{
+  display: flex;
+}
+.column{
+  width: 18%;
+}
