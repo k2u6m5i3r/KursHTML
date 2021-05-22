@@ -40,48 +40,49 @@ body{
     height: 1px;
     clip: rect(0, 0, 0, 0);
     position: relative;
-   
     top: -1px;
     left: -1px;
     margin: -1px;
   }
 
   &__label {
-    // display: inline-block;
+    display: inline-block;
     font-size: 20px;
-    padding: 20px;
-
     cursor: pointer;
     position: relative;
     display: flex;
     align-items: center;
     width: max-content;
-    
-  }
-  &:after, &:before{
-    box-sizing: border-box;
-    border-radius: 50%;
-    border: 3px solid tomato;
-  }
-  &:before{
-    content: '';
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-  }
-  &:after{
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    border-color: tomato;
-    top: 6px;
-    left: 5px;
+
+    &:before,
+    &:after {
+      box-sizing: border-box;
+      border: 3px solid tomato;
+      border-radius: 50%;
+    }
+
+    &:before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+
+    &:after {
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      background-color: tomato;
+      top: 6px;
+      left: 5px;
+    }
   }
 }
+
 .input__input:checked + .input__label:after {
-  // background-color: lightgray;;
   content: '';
 }
+
 
 .accordion{
   &__status--close, 
