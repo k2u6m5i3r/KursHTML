@@ -3,6 +3,9 @@
 body * {
   outline: 1px solid lightgrey;
 }
+body{
+  padding-bottom: 50px;
+}
 .form{
   display: flex;
   flex-direction: column;
@@ -30,3 +33,120 @@ body * {
 #bigText{
   resize: none;
 }
+.input {
+  &__input {
+    display: none;
+    width: 1px;
+    height: 1px;
+    clip: rect(0, 0, 0, 0);
+    position: relative;
+   
+    top: -1px;
+    left: -1px;
+    margin: -1px;
+  }
+
+  &__label {
+    // display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    
+  }
+  &:after, &:before{
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 3px solid tomato;
+  }
+  &:before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  &:after{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-color: tomato;
+    top: 6px;
+    left: 5px;
+  }
+}
+.input__input:checked + .input__label:after {
+  // background-color: lightgray;;
+  content: '';
+}
+
+.accordion{
+  &__status--close, 
+  &__status--open 
+  {
+    display: none;
+  }
+  &__action--open,
+  &__action--close
+  {
+    display: block;
+  }
+  &__content{
+    max-height: 0;
+    overflow: hidden;
+    transition:  max-height .5s linear;
+  }
+}
+
+.accordion__status--close:checked ~ .accordion__action--close{
+  display: none;
+}
+.accordion__status--open:checked ~ .accordion__action--open{
+  display: none;
+}
+.accordion__status--open:checked ~ .accordion__content{
+  max-height: 80vh;
+}
+
+/*
+
+YES NO С подсветкой блоака
+scss
+.input {
+  &__input {
+    display: none;
+    width: 1px;
+    height: 1px;
+    clip: rect(0, 0, 0, 0);
+    position: relative;
+    top: -1px;
+    left: -1px;
+    margin: -1px;
+  }
+
+  &__label {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+    cursor: pointer;
+  }
+}
+
+.input__input:checked + .input__label {
+  background-color: lightgray;;
+}
+html
+  <div class="input">
+    <input type="radio" class="input__input" name="test" value="yes" id="radio-yes" checked>
+    <label class="input__label" for="radio-yes">
+      Yes
+    </label>
+    <input type="radio" class="input__input" name="test" value="no" id="radio-no">
+    <label class="input__label" for="radio-no">
+      No
+    </label>
+  </div>
+*/

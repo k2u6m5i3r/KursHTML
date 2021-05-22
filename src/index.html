@@ -44,7 +44,48 @@
     <button>Btn submit</button>
 
   </form>
-  <input class="" type="text">
+  <div class="input">
+    <input type="radio" class="input__input" name="test" value="yes" id="radio-yes" checked>
+    <label class="input__label" for="radio-yes">
+      Yes
+    </label>
+    <input type="radio" class="input__input" name="test" value="no" id="radio-no">
+    <label class="input__label" for="radio-no">
+      No
+    </label>
+  </div>
+  <section>
+    <h3>Accordion</h3>
+    <div class="accordion">
+      <input id="status--open" class="accordion__status--open" type="radio" name="status">
+      <input id="status--close" class="accordion__status--close" type="radio" name="status" checked>
+
+      <label for="status--open" class="accordion__action--open">
+        show more
+      </label>
+      <label for="status--close" class="accordion__action--close">
+        show less
+      </label>
+
+
+      <div class="accordion__content">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorum harum
+          sapiente dicta voluptatibus quaerat eum nam molestias? Facilis voluptatibus aperiam architecto aliquam
+          explicabo
+          fugiat ratione molestiae ipsum molestias nemo.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eveniet soluta officiis vero possimus
+          nobis consectetur voluptatum nostrum dolor tempore voluptatem eaque hic ullam, odio molestias, debitis cum
+          facere saepe!
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ipsa eaque nam quisquam qui ducimus omnis
+          nostrum? Nihil recusandae atque, animi similique ut velit eius saepe, magnam officiis dolorem maiores.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ipsum dolorum consequatur labore neque
+          fugiat fuga, delectus, ea eos, cupiditate similique quae pariatur sed ipsam voluptas atque. Obcaecati, animi
+          molestias.
+        </div>
+      </div>
+
+    </div>
+  </section>
 </body>
 
 </html>
