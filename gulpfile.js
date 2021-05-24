@@ -17,6 +17,7 @@ const replace = require('gulp-replace');
 const path = {
   dist: {
     html: 'dist/',
+    slick: 'dist/slick/',
     js: 'dist/js/',
     css: 'dist/css/',
     img: 'dist/img/',
@@ -27,14 +28,16 @@ const path = {
     style: 'src/main.scss',
     img: 'src/img/**/*.*',
     fonts: 'src/fonts/**/*.*',
-    js: 'src/js/**/*.js'
+    js: 'src/js/**/*.js',
+    slick: 'src/slick/**/*.*'
   },
   watch: {
     html: 'src/**/*.html',
     style: 'src/**/*.scss',
     img: 'src/img/**/*.*',
     fonts: 'src/fonts/**/*.*',
-    js: 'src/js/**/*.js'
+    js: 'src/js/**/*.js',
+    slick: 'src/slick/**/*.*'
   },
   clean: './dist'
 };
