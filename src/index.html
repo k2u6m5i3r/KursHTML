@@ -13,9 +13,105 @@
 </head>
 
 <body>
+  <div class="container">
+    <div class="slickSlider">
+      <div class="slid">
+        <div class="slickSlider__img">
+          <img src="./img/img_1.jpg" alt="">
+        </div>
+        <div class="slickSlider__content">
+          <div class="slickSlider__titel">
+            your content 1
+          </div>
+          <div class="slickSlider__description">
+            Info for 1
+          </div>
+        </div>
 
-  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+      </div>
+      <div class="slid">
+        <div class="slickSlider__img">
+          <img src="./img/img_3-.jpg" alt="">
+        </div>
+        <div class="slickSlider__content">
+          <div class="slickSlider__titel">
+            your content 2
+          </div>
+          <div class="slickSlider__description">
+            Info for 2
+          </div>
+        </div>
+      </div>
+      <div class="slid">
+        <div class="slickSlider__img">
+          <img src="./img/img_2.jpg" alt="">
+        </div>
+        <div class="slickSlider__content">
+          <div class="slickSlider__titel">
+            your content 3
+          </div>
+          <div class="slickSlider__description">
+            Info for 3
+          </div>
+        </div>
+      </div>
+      <div class="slid">
+        <div class="slickSlider__img">
+          <img src="./img/img_3.jpg" alt="">
+        </div>
+        <div class="slickSlider__content">
+          <div class="slickSlider__titel">
+            your content 4
+          </div>
+          <div class="slickSlider__description">
+            Info for 4
+          </div>
+        </div>
+      </div>
+      <div class="slid">
+        <div class="slickSlider__img">
+          <img src="./img/img_1.jpg" alt="">
+        </div>
+        <div class="slickSlider__content">
+          <div class="slickSlider__titel">
+            your content 5
+          </div>
+          <div class="slickSlider__description">
+            Info for 5
+          </div>
+        </div>
+      </div>
+      <div class="slid">
+        <div class="slickSlider__img">
+          <img src="./img/img_2.jpg" alt="">
+        </div>
+        <div class="slickSlider__content">
+          <div class="slickSlider__titel">
+            your content 6
+          </div>
+          <div class="slickSlider__description">
+            Info for 6
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.slickSlider').slick({
+        dots: true,
+        infinite: true,
+        variableWidth: true
+      });
+    });
+  </script>
 
 </body>
 
