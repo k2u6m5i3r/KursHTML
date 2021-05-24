@@ -18,6 +18,7 @@ const path = {
   dist: {
     html: 'dist/',
     js: 'dist/js/',
+    slick: 'dist/slick/',
     css: 'dist/css/',
     img: 'dist/img/',
     fonts: 'dist/fonts/'
@@ -27,14 +28,16 @@ const path = {
     style: 'src/main.scss',
     img: 'src/img/**/*.*',
     fonts: 'src/fonts/**/*.*',
-    js: 'src/js/**/*.js'
+    js: 'src/js/**/*.js',
+    slick: 'src/slick/**/*.*'
   },
   watch: {
     html: 'src/**/*.html',
     style: 'src/**/*.scss',
     img: 'src/img/**/*.*',
     fonts: 'src/fonts/**/*.*',
-    js: 'src/js/**/*.js'
+    js: 'src/js/**/*.js',
+    slick: 'src/slick/**/*.*'
   },
   clean: './dist'
 };
@@ -82,7 +85,7 @@ const fontsBuild = () => src(path.src.fonts).pipe(dest(path.dist.fonts)).pipe(br
 
 const imgsBuild = () => src(path.src.img).pipe(dest(path.dist.img)).pipe(browsersync.stream());
 const jsBuild = () => src(path.src.js).pipe(dest(path.dist.js)).pipe(browsersync.stream());
-
+const slickBuild = () => src(path.src.slick).pipe(dest(path.dist.slick)).pipe(browsersync.stream());
 const server = () => {
   browsersync.init(serverConfig);
   
@@ -91,13 +94,16 @@ const server = () => {
   watch(path.src.img, imgsBuild);
   watch(path.src.fonts, fontsBuild);
   watch(path.src.js, jsBuild);
+  watch(path.src.slick, slickBuild);
   
 };
 
 const build = series(
   cleanDist,
-  parallel(httpBuild, stylesBuild, fontsBuild, imgsBuild, jsBuild));
+  parallel(httpBuild, stylesBuild, fontsBuild, imgsBuild, jsBuild, slickBuild));
 exports.start = series(build, server);
 exports.clean = series(cleanDist);
 exports.build = series(build);
+
+
 
