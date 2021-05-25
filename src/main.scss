@@ -1,3 +1,35 @@
 body * {
   outline: 1px solid lightgrey;
 }
+
+.column-wrapper{
+  border: 2px solid red;
+}
+@keyframes move {
+  0%{
+    left: 0%;
+  }
+  50%{
+    left: 100%;
+    transform: rotate(360deg);
+  }
+  100%{
+    left: 0%;
+    transform: rotate(0deg);
+  }
+}
+.animation{
+  height: 300px;
+  position: relative;
+
+  &__item{
+    height: 70px;
+    width: 70px;
+    background-color: tomato;
+    position: absolute;
+    bottom: 50%;
+   animation: move 1s linear 0.5s 200 ;
+
+
+  }
+}
