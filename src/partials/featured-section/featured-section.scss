@@ -1,0 +1,19 @@
+.featured-section{
+    width: 320px;
+    padding: 70px 10px;
+
+&__titel{
+    text-transform: uppercase;
+    color: #464646;
+
+}
+&__description{
+    padding: 35px 0 25px 0;
+    color:#414141;
+}
+&__a{
+    text-decoration:none;
+    text-transform: uppercase;
+    color: #474747;
+}
+}

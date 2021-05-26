@@ -1,0 +1,25 @@
+.project{
+    width: 220px;
+    padding: 70px 10px;
+ img{
+     
+ }
+&__titel{
+    text-transform: uppercase;
+    color: #464646;
+    padding:  0 0 20px 0;
+
+}
+&__description{
+    padding: 35px 0 25px 0;
+    color:#414141;
+    padding:  0 0 20px 0;
+}
+&__a{
+    display: inline-block;
+    text-decoration:none;
+    text-transform: uppercase;
+    color: #474747;
+    padding:  0 0 20px 0;
+}
+}

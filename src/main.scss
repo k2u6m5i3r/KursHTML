@@ -1,14 +1,47 @@
+@import "./partials/menu-items/menu-item.scss";
+@import "./partials/featured-section/featured-section.scss";
+@import "./partials/project/project.scss";
+
 body * {
-  // outline: 1px solid lightgrey;
+   outline: 1px solid lightgrey;
 }
 body{
-  background-color: rgb(111, 111, 108);
+  background-color: rgb(224, 224, 217);
   height: 100%;
+    background-image: url('./img/img.jpg');
+  background-repeat: repeat;
+  background-position: center center;
+  background-attachment: fixed;
 }
+html{
 
+}
 .container{
   width: 960px;
   margin: 0 auto;
+}
+
+
+.header{
+  padding: 10px;
+  box-sizing: border-box;
+  &__baner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 135px;
+  }
+  &__pages{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}
+
+.pages{
+  width: 135px;
 }
 .slickSlider{
   margin: 0 auto;
@@ -50,5 +83,60 @@ img{
   filter: grayscale(1);
 }
 img:hover{
-  filter: grayscale(0);
+  filter: grayscale(0.55);
 }
+
+/* Описание слайдов */
+.sliderDescription{
+  background-color: #f6f6f6;
+  padding: 10px;
+  &__titel{
+    text-transform: uppercase;
+
+  }
+}
+
+/* Описание слайдов END*/
+ 
+/* Секция три колонки */
+.tree-column{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+/* Секция три колонки END */
+
+/* секция четыре колонки OurCurrentProjects */
+.OurCurrentProjects{
+  padding: 10px;
+
+}
+.OurCurrentProjects__name{
+  text-align: center;
+  text-transform: uppercase;
+}
+.OurCurrentProjects__content{
+  display: flex;
+  justify-content: space-between;
+}
+/* секция четыре колонки OurCurrentProjects END*/
+
+
+// Footer
+.footer{
+  border-top: 5px solid orange;
+  background-color: #f6f6f6;
+  
+  
+}
+.footer__content{
+  box-sizing: border-box;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+
+  
+}
+// Footer END

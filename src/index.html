@@ -13,6 +13,18 @@
 </head>
 
 <body>
+  <header class="header container">
+    <div class="header__baner">
+      <div class="header__img">Банер</div>
+      <div class="header__pages">
+        @@include('./partials/menu-items/_menu-item.html',{"subItem":"HomePages","item":"Home"})
+        @@include('./partials/menu-items/_menu-item.html',{"subItem":"AboutPages","item":"About"})
+        @@include('./partials/menu-items/_menu-item.html',{"subItem":"ProjectPages","item":"Projects"})
+        @@include('./partials/menu-items/_menu-item.html',{"subItem":"BlogPages","item":"Blog"})
+        @@include('./partials/menu-items/_menu-item.html',{"subItem":"ContactPages","item":"Contact"})
+      </div>
+    </div>
+  </header>
   <div class="container">
     <div class="slickSlider">
       <div class="slid">
@@ -95,11 +107,43 @@
         </div>
       </div>
     </div>
+    <div class="sliderDescription">
+      <div class="sliderDescription__titel">
+        <p>JESUS TYPOGRAPHY WALLPAPER</p>
+      </div>
+      <div class="sliderDescription__content">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste rem quas odit nostrum culpa eius incidunt labore quibusdam deleniti vitae quaerat ad tenetur, id voluptatem ducimus vel! Pariatur, recusandae ex?</p>
+      </div>
+    </div>
+    <section class="tree-column">
+      
+      @@include('./partials/featured-section/_featured-section.html',{"sprite":"page", "titel":"Check Out OUR  latest PROJECTS","description":"Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.","webPages":"#"})
+      @@include('./partials/featured-section/_featured-section.html',{"sprite":"start", "titel":"Guarantee  5  STar Quality Work","description":"Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.","webPages":"#"})
+      @@include('./partials/featured-section/_featured-section.html',{"sprite":"blog", "titel":"Stay connected  by reading  the  blog","description":"Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.","webPages":"#"})
+
+    </section>
+    <section class="OurCurrentProjects">
+      <div class="OurCurrentProjects__name">
+        My latesst work 
+      </div>
+      <div class="OurCurrentProjects__content">
+        @@include('./partials/project/_project.html',{"pathImg":"./img/home/img_home_1.jpg", "titel":"Stay connected  by reading  the  blog","description":"Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.","webPages":"#"})
+        @@include('./partials/project/_project.html',{"pathImg":"./img/home/img_home_2.jpg", "titel":"Stay connected  by reading  the  blog","description":"Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.","webPages":"#"})
+        @@include('./partials/project/_project.html',{"pathImg":"./img/home/img_home_3.jpg", "titel":"Stay connected  by reading  the  blog","description":"Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.","webPages":"#"})
+        @@include('./partials/project/_project.html',{"pathImg":"./img/home/img_home_4.jpg", "titel":"Stay connected  by reading  the  blog","description":"Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.","webPages":"#"})
+      </div>
+    </section>
   </div>
 
 
 
+  <footer class="footer">
+    <div class="footer__content container">
+          <p>All Content Copyright 2021 - Bitz. All Rights Resetved</p>
+    <p>Site Developed by Best PSD Freebies</p>
+    </div>
 
+  </footer>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
