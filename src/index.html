@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./main.scss">
   <title>First project</title>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
@@ -80,11 +82,31 @@
 <div class="row">
   <div class="animation">
     <div class="animation__item">
-      
+
     </div>
   </div>
 </div>
-
+<div class="row">
+  <div class="col-12">
+    <div class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide"><img src="./img/img_1+.jpg" class="d-block w-100" alt="...">Slide 01</li>
+          <li class="splide__slide"><img src="./img/img_2+.jpg" class="d-block w-100" alt="...">Slide 02</li>
+          <li class="splide__slide"><img src="./img/img_3+.jpg" class="d-block w-100" alt="...">Slide 03</li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      new Splide('.splide').mount();
+    </script>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    
+  </div>
+</div>
 <body>
 </body>
 
