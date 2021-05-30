@@ -2,6 +2,7 @@
 @import "./partials/team-card/team-card.scss";
 @import "./partials/menu-items/menu-item.scss";
 @import "./sprite.scss";
+
 html{
   height: 100%;
 }
@@ -46,12 +47,12 @@ body * {
   display: flex;
   flex-wrap: wrap;
   }
-  .three-columns__item{
-    //display: block;
-    width: 33.3%;
-    padding: 0 50px;
-    box-sizing: border-box;
-  }
+.three-columns__item{
+  //display: block;
+  width: 33.3%;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
 .float{
   border: 1px solid green;
   width: 150px;
@@ -89,6 +90,7 @@ body * {
 .header.dots:after{
   content: "...";
 }
+
 // footer
 footer{
 
@@ -127,6 +129,7 @@ header a{
   text-decoration: none;
 }
 // end header
+
 // banner
 .banner .container{
   height: 405px;
@@ -211,7 +214,7 @@ label{
   width: 150px;
 }
 .form-message{
-  position: relative;
+
   display: flex;
   padding-bottom: 15px;
   font-size: 24px;
@@ -242,9 +245,8 @@ label{
   width: 20%;
 }
 .btn{
- position: absolute;
- top:70%;
- left: 70%;
+
+margin-left: 75%;
  font-family: 'Noto Sans JP', sans-serif;
  font-size: 24px;
  font-weight: 100;
