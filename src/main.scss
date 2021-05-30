@@ -29,12 +29,17 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     height: 135px;
+  }
+  &__img{
+    width: 35%;
   }
   &__pages{
     width: 60%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
@@ -102,6 +107,7 @@ img:hover{
 .tree-column{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 10px;
 }
 /* Секция три колонки END */
@@ -118,6 +124,7 @@ img:hover{
 .OurCurrentProjects__content{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 /* секция четыре колонки OurCurrentProjects END*/
 
@@ -138,5 +145,46 @@ img:hover{
   height: 70px;
 
   
+}
+
+@media screen and (max-width: 600px) {
+
+  .slickSlider{
+    display: none;
+  }
+  .container{
+    width: 590px;
+    margin: 0 auto;
+  }
+  
+  }
+
+/* Portrait tablets and medium desktops */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .container{
+    width: 960px;
+
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .container{
+    width: 760px;
+
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media screen and (max-width: 767px) {
+  .container{
+    width: 480px;
+
+  }
+}
+
+/* Landscape phones and smaller */
+@media screen and (max-width: 480px) {
+
 }
 // Footer END
