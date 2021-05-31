@@ -1,17 +1,20 @@
 @import "./partials/menu-items/menu-item.scss";
 @import "./partials/featured-section/featured-section.scss";
 @import "./partials/project/project.scss";
+@import "./sprite.scss";
 
 body * {
-   outline: 1px solid lightgrey;
+   //outline: 1px solid lightgrey;
 }
 body{
-  background-color: rgb(224, 224, 217);
+  background-color: rgb(255, 255, 255);
   height: 100%;
-    background-image: url('./img/img.jpg');
+    //background-image: url('./img/home-puzle100x100.jpg');
+    
   background-repeat: repeat;
   background-position: center center;
   background-attachment: fixed;
+  font-family: 'Nunito Sans', sans-serif;
 }
 html{
 
@@ -116,11 +119,37 @@ img:hover{
 .OurCurrentProjects{
   padding: 10px;
 
+
 }
 .OurCurrentProjects__name{
-  text-align: center;
-  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  
+  
+
+
+
 }
+.OurCurrentProjects__name p{
+    text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.5rem;
+    background-color: #ffffff;
+  z-index: 4;
+  padding: 0 5px;
+}
+
+.OurCurrentProjects__name:before{
+  content: '_';
+  color: transparent;
+  position: absolute;
+  border-bottom: 30px solid #000;
+  //background: linear-gradient(135deg, #dfdfdf 13px,grey 5px, #cc9c3c 13px); 
+  bottom: 23px;
+  width: 100%;
+}
+
 .OurCurrentProjects__content{
   display: flex;
   justify-content: space-between;

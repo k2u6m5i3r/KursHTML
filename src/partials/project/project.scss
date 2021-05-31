@@ -2,16 +2,16 @@
     width: 210px;
     padding: 70px 10px;
  img{
-     
+     //display: none;
  }
 &__titel{
+    padding: 5px 0;
     text-transform: uppercase;
     color: #464646;
-    padding:  0 0 20px 0;
-
+    font-weight: 800; 
 }
 &__description{
-    padding: 35px 0 25px 0;
+
     color:#414141;
     padding:  0 0 20px 0;
 }
@@ -21,5 +21,12 @@
     text-transform: uppercase;
     color: #474747;
     padding:  0 0 20px 0;
+    font-weight: 800;
+}
+&__a:before{
+        
+    content: "\f101";
+    padding: 0 10px 0 0;
+    font-family: FontAwesome;
 }
 }
