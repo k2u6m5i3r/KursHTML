@@ -1,10 +1,16 @@
 @import "./partials/menu-items/menu-item.scss";
 @import "./partials/featured-section/featured-section.scss";
 @import "./partials/project/project.scss";
+@import "./partials/description-pages/description-pages.scss";
+@import "./partials/our-work/our-work.scss";
+@import "./partials/team-staff/team-staff.scss";
+@import "./partials/footer/footer.scss";
+// @import "./partials/footer/_footer.html";
+@import "./partials/header/header.scss";
 @import "./sprite.scss";
 
 body * {
-   //outline: 1px solid lightgrey;
+   outline: 1px solid lightgrey;
 }
 body{
   background-color: rgb(255, 255, 255);
@@ -47,7 +53,20 @@ html{
   }
 
 }
+/*Разделитель*/
+.hr-seporator {
+	margin: 0;
+	padding: 0;
 
+	height: 5px;
+	border: none;
+	box-sizing: border-box;
+	background-position: 50%;
+	color: #dddddd;
+	background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="3px" height="3px" viewBox="0 0 3 3" fill="grey"><polygon points="0,0.5 0,1.5 1.5,3 2.5,3"></polygon><polygon points="2.5,0 1.5,0 3,1.5 3,0.5"></polygon></svg>');
+	background-size: 6px 6px;
+}
+/*Разделитель END*/
 .pages{
   width: 135px;
 }
@@ -118,24 +137,19 @@ img:hover{
 /* секция четыре колонки OurCurrentProjects */
 .OurCurrentProjects{
   padding: 10px;
-
-
 }
 .OurCurrentProjects__name{
   display: flex;
   justify-content: center;
   position: relative;
-  
-  
-
-
 
 }
 .OurCurrentProjects__name p{
-    text-transform: uppercase;
-  font-weight: 800;
+  color: #474747;
+  text-transform: uppercase;
+  font-weight: 700;
   font-size: 1.5rem;
-    background-color: #ffffff;
+  background-color: #ffffff;
   z-index: 4;
   padding: 0 5px;
 }
@@ -144,9 +158,9 @@ img:hover{
   content: '_';
   color: transparent;
   position: absolute;
-  border-bottom: 30px solid #000;
-  //background: linear-gradient(135deg, #dfdfdf 13px,grey 5px, #cc9c3c 13px); 
-  bottom: 23px;
+
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="3px" height="3px" viewBox="0 0 3 3" fill="grey"><polygon points="0,0.5 0,1.5 1.5,3 2.5,3"></polygon><polygon points="2.5,0 1.5,0 3,1.5 3,0.5"></polygon></svg>');
+  bottom: 25px;
   width: 100%;
 }
 
@@ -158,24 +172,14 @@ img:hover{
 /* секция четыре колонки OurCurrentProjects END*/
 
 
-// Footer
-.footer{
-  border-top: 5px solid orange;
-  background-color: #f6f6f6;
-  
-  
-}
-.footer__content{
-  box-sizing: border-box;
-  padding: 0 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 70px;
 
-  
-}
 
+/*  три колонки AboutА*/
+// .tree-column{
+//   display: flex;
+//   justify-content: space-between;
+// }
+/*  три колонки AboutА END*/
 @media screen and (max-width: 600px) {
 
   .slickSlider{

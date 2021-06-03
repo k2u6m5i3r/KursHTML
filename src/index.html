@@ -15,18 +15,19 @@
 </head>
 
 <body>
-  <header class="header container">
+  <!-- <header class="header container">
     <div class="header__baner">
       <div class="header__img">Банер</div>
       <div class="header__pages">
-        @@include('./partials/menu-items/_menu-item.html',{"subItem":"HomePages","item":"Home"})
-        @@include('./partials/menu-items/_menu-item.html',{"subItem":"AboutPages","item":"About"})
-        @@include('./partials/menu-items/_menu-item.html',{"subItem":"ProjectPages","item":"Projects"})
-        @@include('./partials/menu-items/_menu-item.html',{"subItem":"BlogPages","item":"Blog"})
-        @@include('./partials/menu-items/_menu-item.html',{"subItem":"ContactPages","item":"Contact"})
+        @@include('./partials/menu-items/_menu-item.html',{"subItem":"HomePages","item":"Home","webPages":""})
+        @@include('./partials/menu-items/_menu-item.html',{"subItem":"AboutPages","item":"About","webPages":"./about.html"})
+        @@include('./partials/menu-items/_menu-item.html',{"subItem":"ProjectPages","item":"Projects","webPages":""})
+        @@include('./partials/menu-items/_menu-item.html',{"subItem":"BlogPages","item":"Blog","webPages":""})
+        @@include('./partials/menu-items/_menu-item.html',{"subItem":"ContactPages","item":"Contact","webPages":""})
       </div>
     </div>
-  </header>
+  </header> -->
+  @@include('./partials/header/_header.html')
   <div class="container">
     <div class="slickSlider">
       <div class="slid">
@@ -137,15 +138,9 @@
     </section>
   </div>
 
+  @@include('./partials/footer/_footer.html')
 
 
-  <footer class="footer">
-    <div class="footer__content container">
-          <p>All Content Copyright 2021 - Bitz. All Rights Resetved</p>
-    <p>Site Developed by Best PSD Freebies</p>
-    </div>
-
-  </footer>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>

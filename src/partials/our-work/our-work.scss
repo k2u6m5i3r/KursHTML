@@ -1,0 +1,21 @@
+.our-work{
+
+    width: 290px;
+    padding: 70px 10px;
+	&__titel{
+		padding: 0 0 0 0;
+		text-transform: uppercase;
+		color: #464646;
+		font-weight: 800; 
+	}
+	&__description{
+		color:#9e9e9e;
+		padding:  0 0 20px 0;
+		font-style: italic;
+	}
+	&__cntnt{
+		color:#787878;
+		padding:  0 0 20px 0;
+		
+	}
+}
