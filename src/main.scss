@@ -11,7 +11,7 @@
 
 body * {
    //outline: 1px solid lightgrey;
-   
+
 }
 body{
   background-color: rgb(255, 255, 255);
@@ -31,29 +31,12 @@ html{
   margin: 0 auto;
 }
 
-
-.header{
-  padding: 10px;
-  box-sizing: border-box;
-  &__baner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 135px;
-  }
-  &__img{
-    width: 35%;
-  }
-  &__pages{
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
+.wrapper{
+  display: flex;
+  flex-direction: column;
 }
+
+
 /*Разделитель*/
 .hr-seporator {
 	margin: 0;
@@ -172,8 +155,20 @@ img:hover{
 }
 /* секция четыре колонки OurCurrentProjects END*/
 
+/* Секция две колонки, для разделения контента и субменю */
+.two_column{
+  flex: 1 1 auto;
+  display: flex;
 
+}
+.main_container{
+  width: 720px;
 
+}
+.sub_menu{
+  width: 230px;
+}
+/* Секция две колонки, для разделения контента и субменю  END*/
 
 /*  три колонки AboutА*/
 // .tree-column{

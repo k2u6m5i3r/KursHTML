@@ -8,10 +8,21 @@
     <link rel="stylesheet" href="./main.scss">
 </head>
 <body>
-    @@include('./partials/header/_header.html')
-    <div class="container">
+    <div class="wrapper">
+        @@include('./partials/header/_header.html')
+        
+        <div class="two_column container">
+            <div class="main_container">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis similique eaque consequuntur sapiente velit sunt expedita. Qui laudantium ipsum non consequuntur animi quidem, quo itaque quae id et, praesentium sapiente!</p>
+            </div>
+            <div class="sub_menu">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab amet, et reiciendis exercitationem sed minus quam laborum suscipit rem ut molestiae, veniam, quae delectus aspernatur atque earum molestias reprehenderit laboriosam?</p>
+            </div>
+        </div>
 
+        
+        @@include('./partials/footer/_footer.html')        
     </div>
-    @@include('./partials/footer/_footer.html')
+
 </body>
 </html>
