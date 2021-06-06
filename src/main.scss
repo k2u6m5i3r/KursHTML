@@ -7,6 +7,8 @@
 @import "./partials/footer/footer.scss";
 // @import "./partials/footer/_footer.html";
 @import "./partials/header/header.scss";
+@import "./partials/sidebar/sidebar.scss";
+//@import "./partials/sidebar/_sidebar.html";
 @import "./sprite.scss";
 
 body * {
@@ -23,25 +25,27 @@ body{
   background-attachment: fixed;
   font-family: 'Nunito Sans', sans-serif;
 }
-html{
-
+html,body {
+  height: 100%;
 }
-.container{
+.container {
   width: 960px;
   margin: 0 auto;
 }
 
-.wrapper{
-  display: flex;
-  flex-direction: column;
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
 }
-
-
+main {
+	flex: 1 0 auto;
+}
 /*Разделитель*/
 .hr-seporator {
 	margin: 0;
-	padding: 0;
-
+	padding: 0 5px;
+  //width: 100%;
 	height: 5px;
 	border: none;
 	box-sizing: border-box;
@@ -156,16 +160,18 @@ img:hover{
 /* секция четыре колонки OurCurrentProjects END*/
 
 /* Секция две колонки, для разделения контента и субменю */
-.two_column{
-  flex: 1 1 auto;
+
+.two_column {
+  flex: 1 0 auto;
   display: flex;
 
 }
-.main_container{
+.main_container {
   width: 720px;
 
 }
-.sub_menu{
+.sub_menu {
+  padding: 0 15px;
   width: 230px;
 }
 /* Секция две колонки, для разделения контента и субменю  END*/

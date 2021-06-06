@@ -9,18 +9,17 @@
 </head>
 <body>
     <div class="wrapper">
-        @@include('./partials/header/_header.html')
-        
-        <div class="two_column container">
+        @@include('./partials/header/_header.html')      
+        <main class="two_column container">
             <div class="main_container">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis similique eaque consequuntur sapiente velit sunt expedita. Qui laudantium ipsum non consequuntur animi quidem, quo itaque quae id et, praesentium sapiente!</p>
+                @@include('./partials/description-pages/_description-pages.html',{"titel":"Contact us","description":"Etiam eget mi enim, non ultricies nisi voluptatem, illo inventore veritatis et quasi architecto beatae  vitae dicta sunt explicabo nemo enim ipsam voluptatem."})
+                <hr class="hr-seporator">
             </div>
             <div class="sub_menu">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab amet, et reiciendis exercitationem sed minus quam laborum suscipit rem ut molestiae, veniam, quae delectus aspernatur atque earum molestias reprehenderit laboriosam?</p>
+                @@include("./partials/sidebar/_sidebar.html")
+                <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab amet, et reiciendis exercitationem sed minus quam laborum suscipit rem ut molestiae, veniam, quae delectus aspernatur atque earum molestias reprehenderit laboriosam?</p> -->
             </div>
-        </div>
-
-        
+        </main>
         @@include('./partials/footer/_footer.html')        
     </div>
 

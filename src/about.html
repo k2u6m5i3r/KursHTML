@@ -8,43 +8,46 @@
     <link rel="stylesheet" href="./main.scss">
 </head>
 <body>
-    @@include('./partials/header/_header.html')
-    <div class="container">
-        @@include('./partials/description-pages/_description-pages.html',{"titel":"Aboutus","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aliquam libero deleniti ea, debitis quasi quod minus error, a quis, ullam laboriosam placeat. Tempore architecto molestias ducimus consequuntur debitis dolores!"})
-        <hr class="hr-seporator">
-
-        <div class="tree-column">
-            @@include('./partials/our-work/_our-work.html',{"titel":"our phihologi","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit.","cntnt":"AAAA"})
-            @@include('./partials/our-work/_our-work.html',{"titel":"our phihologi","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit.","cntnt":"AAAA"})
-            @@include('./partials/our-work/_our-work.html',{"titel":"our phihologi","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit.","cntnt":"AAAA"})
-          
-        </div>
-        <hr class="hr-seporator">
+    <div class="wrapper">
+        @@include('./partials/header/_header.html')
+        <main class="container">
+            @@include('./partials/description-pages/_description-pages.html',{"titel":"Aboutus","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aliquam libero deleniti ea, debitis quasi quod minus error, a quis, ullam laboriosam placeat. Tempore architecto molestias ducimus consequuntur debitis dolores!"})
+            <hr class="hr-seporator">
+    
             <div class="tree-column">
-                @@include('./partials/team-staff/_team-staff.html',{
-                    "imgPath":"./img/about/avatarStaff.jpg",
-                    "name":"Jane Doe",
-                    "post":"CEO",
-                    "idStaff":"1.306.432.0065",
-                    "description":"Seded ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laud antium, totam rem aperiam."
-                })
-                @@include('./partials/team-staff/_team-staff.html',{
-                    "imgPath":"./img/about/avatarStaff.jpg",
-                    "name":"Jane Doe",
-                    "post":"CEO",
-                    "idStaff":"1.306.432.0065",
-                    "description":"Seded ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laud antium, totam rem aperiam."
-                })
-                @@include('./partials/team-staff/_team-staff.html',{
-                    "imgPath":"./img/about/avatarStaff.jpg",
-                    "name":"Jane Doe",
-                    "post":"CEO",
-                    "idStaff":"1.306.432.0065",
-                    "description":"Seded ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laud antium, totam rem aperiam."
-                })
+                @@include('./partials/our-work/_our-work.html',{"titel":"our phihologi","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit.","cntnt":"AAAA"})
+                @@include('./partials/our-work/_our-work.html',{"titel":"our phihologi","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit.","cntnt":"AAAA"})
+                @@include('./partials/our-work/_our-work.html',{"titel":"our phihologi","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit.","cntnt":"AAAA"})
+              
             </div>
+            <hr class="hr-seporator">
+                <div class="tree-column">
+                    @@include('./partials/team-staff/_team-staff.html',{
+                        "imgPath":"./img/about/avatarStaff.jpg",
+                        "name":"Jane Doe",
+                        "post":"CEO",
+                        "idStaff":"1.306.432.0065",
+                        "description":"Seded ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laud antium, totam rem aperiam."
+                    })
+                    @@include('./partials/team-staff/_team-staff.html',{
+                        "imgPath":"./img/about/avatarStaff.jpg",
+                        "name":"Jane Doe",
+                        "post":"CEO",
+                        "idStaff":"1.306.432.0065",
+                        "description":"Seded ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laud antium, totam rem aperiam."
+                    })
+                    @@include('./partials/team-staff/_team-staff.html',{
+                        "imgPath":"./img/about/avatarStaff.jpg",
+                        "name":"Jane Doe",
+                        "post":"CEO",
+                        "idStaff":"1.306.432.0065",
+                        "description":"Seded ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laud antium, totam rem aperiam."
+                    })
+                </div>
+        </main>
+        @@include('./partials/footer/_footer.html')
     </div>
-    @@include('./partials/footer/_footer.html')
+    
     
 </body>
 </html>
