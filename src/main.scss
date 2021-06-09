@@ -5,10 +5,8 @@
 @import "./partials/our-work/our-work.scss";
 @import "./partials/team-staff/team-staff.scss";
 @import "./partials/footer/footer.scss";
-// @import "./partials/footer/_footer.html";
 @import "./partials/header/header.scss";
 @import "./partials/sidebar/sidebar.scss";
-//@import "./partials/sidebar/_sidebar.html";
 @import "./sprite.scss";
 
 body * {
@@ -73,7 +71,6 @@ main {
   position: absolute;
   top: 83%;
   left: 0%;
-  
   width: 25%;
   height: 10%;
   background-color: #404040;
@@ -86,8 +83,7 @@ main {
 }
 .slickSlider__titel{
   // width: 60%;
-  // height: 25%;
-  
+  // height: 25%; 
   text-transform: uppercase;
   color: #9a9a9a;
 }
@@ -100,8 +96,6 @@ img{
 img:hover{
   filter: grayscale(0.55);
 }
-
-
 /* Описание слайдов */
 .sliderDescription{
   background-color: #f6f6f6;
