@@ -10,7 +10,9 @@
   <link rel="stylesheet" href="./slick/slick.css">
   <link rel="stylesheet" href="./slick/slick-theme.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
   <script src="https://kit.fontawesome.com/72c4a52b4b.js" crossorigin="anonymous"></script>
 </head>
 
@@ -18,7 +20,7 @@
   <div class="wrapper">
     @@include('./partials/header/_header.html')
     <div class="container">
-      <div class="slickSlider">
+      <!-- <div class="slickSlider">
         <div class="slid">
           <div class="slickSlider__img">
             <img src="./img/img_1.jpg" alt="">
@@ -98,35 +100,74 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="sliderDescription">
         <div class="sliderDescription__titel">
           <p>JESUS TYPOGRAPHY WALLPAPER</p>
         </div>
         <div class="sliderDescription__content">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste rem quas odit nostrum culpa eius incidunt labore quibusdam deleniti vitae quaerat ad tenetur, id voluptatem ducimus vel! Pariatur, recusandae ex?</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste rem quas odit nostrum culpa eius incidunt
+            labore quibusdam deleniti vitae quaerat ad tenetur, id voluptatem ducimus vel! Pariatur, recusandae ex?</p>
         </div>
       </div>
       <section class="tree-column">
-        
-        @@include('./partials/featured-section/_featured-section.html',{"item":"search", "titel":"Check Out OUR  latest PROJECTS","description":"Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.","webPages":"#"})
-        @@include('./partials/featured-section/_featured-section.html',{"item":"star", "titel":"Guarantee  5  STar Quality Work","description":"Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.","webPages":"#"})
-        @@include('./partials/featured-section/_featured-section.html',{"item":"blog", "titel":"Stay connected  by reading  the  blog","description":"Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.","webPages":"#"})
-  
+
+        @@include('./partials/featured-section/_featured-section.html',{
+        "item":"search",
+        "titel":"Check Out OUR latest sPROJECTS",
+        "description":"Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam
+        ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque
+        vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo
+        ultricies.",
+        "webPages":"#"
+        })
+        @@include('./partials/featured-section/_featured-section.html',{
+        "item":"star",
+        "titel":"Guarantee 5 STar Quality Work","description":"Maecenas ipsum metus, semper hendrerit varius mattis,
+        congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta
+        id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a
+        interdum justo ultricies.",
+        "webPages":"#"
+        })
+        @@include('./partials/featured-section/_featured-section.html',{"item":"blog", 
+        "titel":"Stay connected by reading the blog",
+        "description":"Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus.
+        Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec,
+        pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo
+        ultricies.",
+        "webPages":"#"
+        })
+
       </section>
       <section class="OurCurrentProjects">
         <div class="OurCurrentProjects__name">
-          <p>My latesst work</p>  
+          <p>My latesst work</p>
         </div>
         <div class="OurCurrentProjects__content">
-          @@include('./partials/project/_project.html',{"pathImg":"./img/home/img_home_1.jpg", "titel":"vallarta brochure","description":"Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.","webPages":"#"})
-          @@include('./partials/project/_project.html',{"pathImg":"./img/home/img_home_2.jpg", "titel":"photoshop tutorial","description":"Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.","webPages":"#"})
-          @@include('./partials/project/_project.html',{"pathImg":"./img/home/img_home_3.jpg", "titel":"busines card","description":"Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.","webPages":"#"})
-          @@include('./partials/project/_project.html',{"pathImg":"./img/home/img_home_4.jpg", "titel":"website desing","description":"Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.","webPages":"#"})
+          @@include('./partials/project/_project.html',{"pathImg":"./img/home/img_home_1.jpg", "titel":"vallarta
+          brochure","description":"Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam
+          ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque
+          vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo
+          ultricies.","webPages":"#"})
+          @@include('./partials/project/_project.html',{"pathImg":"./img/home/img_home_2.jpg", "titel":"photoshop
+          tutorial","description":"Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam
+          ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque
+          vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo
+          ultricies.","webPages":"#"})
+          @@include('./partials/project/_project.html',{"pathImg":"./img/home/img_home_3.jpg", "titel":"busines
+          card","description":"Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam
+          ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque
+          vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo
+          ultricies.","webPages":"#"})
+          @@include('./partials/project/_project.html',{"pathImg":"./img/home/img_home_4.jpg", "titel":"website
+          desing","description":"Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam
+          ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque
+          vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo
+          ultricies.","webPages":"#"})
         </div>
       </section>
     </div>
-  
+
     @@include('./partials/footer/_footer.html')
   </div>
 
