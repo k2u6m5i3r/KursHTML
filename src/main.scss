@@ -163,20 +163,35 @@ img:hover{
 }
 .main_container {
   width: 720px;
+  
 
 }
 .sub_menu {
   padding: 0 15px;
   width: 230px;
 }
-/* Секция две колонки, для разделения контента и субменю  END*/
+.contact{
+  &__intro{
+    margin: 40px 0;
+    padding: 0px 5px;
 
-/*  три колонки AboutА*/
-// .tree-column{
-//   display: flex;
-//   justify-content: space-between;
-// }
-/*  три колонки AboutА END*/
+  }
+  &__form{
+    padding: 0px 5px;
+    .form-style{
+      display: block;
+      margin-bottom: 12px;
+      padding: 15px;
+      
+
+    }
+    .form-style::placeholder{
+      text-transform: uppercase ;
+      font-weight: 800;
+    }
+  }
+}
+
 @media screen and (max-width: 600px) {
 
   .slickSlider{
