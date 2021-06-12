@@ -1,6 +1,55 @@
 body * {
   outline: 1px solid lightgrey;
 }
-html[land='en']{
- 
+
+
+
+.main-menu{
+  position: relative;
+
+  &.open .main-menu__list{
+    display: flex;
+  }
+  &__list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+
+    @media all and (max-width: 568px) {
+      flex-direction: column;
+      width: 30%;
+
+      position: absolute;
+      top: 100%;
+      z-index: 1;
+      display: none;
+
+    }
+  }
+  &__btn-mobile{
+    display: none;
+    border: 1px solid lightsteelblue;
+    padding: 2px;
+    border-radius: 3px;
+    @media all and (max-width: 568px) {
+      display: block;
+    }
+  }
+  &__items{
+    padding: 7px 15px;
+    cursor: pointer;
+    margin-right:5px;
+    flex: 1 0 auto;
+    text-align: center;
+    @media all and (max-width: 568px) {
+      margin-right: 0;
+    }
+   &:hover{
+     background-color: aquamarine;
+   } 
+  }
 }
+// .main-mene__btn-mobile:hover ~ .main-menu__list{
+// display: block;
+// }
