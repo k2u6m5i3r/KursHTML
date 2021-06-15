@@ -8,6 +8,7 @@
 @import "./partials/header/header.scss";
 @import "./partials/sidebar/sidebar.scss";
 @import "./sprite.scss";
+// @import "./partials/projectContent/_projectContent.html"
 
 body * {
    //outline: 1px solid lightgrey;
@@ -182,7 +183,7 @@ img:hover{
       display: block;
       margin-bottom: 12px;
       padding: 15px;
-      
+
 
     }
     .form-style::placeholder{
@@ -192,6 +193,12 @@ img:hover{
   }
 }
 
+/*Work*/
+.work__calumn{
+  display: flex;
+  flex-wrap: wrap;
+}
+/*Work END*/
 @media screen and (max-width: 600px) {
 
   .slickSlider{

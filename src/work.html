@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>work Blitz</title>
-    <link rel="stylesheet" href="./main.scss">
-</head>
+    @@include('./partials/head/_head.html')
 <body>
     <div class="wrapper">
-        @@include('./partials/header/_header.html')
-        <main class="container">
+        @@include('./partials/header/_header.html')      
+        <main class="two_column container">
+            <div class="main_container">
+                @@include('./partials/description-pages/_description-pages.html',{"titel":"project","description":"Etiam eget mi enim, non ultricies nisi voluptatem, illo inventore veritatis et quasi architecto beatae  vitae dicta sunt explicabo nemo enim ipsam voluptatem."})
+                <hr class="hr-seporator">
+                <div class="filt__category">
 
-        </main>
+                </div>
+                <main class="work">
+                    <div class="work__calumn">
+                        @@include('./partials/projectContent/_projectContent.html',{"bigImg":"bigImg" ,"pathImg":"./img/home/img_home_1.jpg", "titel":"busines card","category":"photo","description":"Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies."})
+                        @@include('./partials/projectContent/_projectContent.html',{"bigImg":"bigImg" ,"pathImg":"./img/home/img_home_2.jpg", "titel":"busines card","category":"photo","description":"Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies."})
+                        @@include('./partials/projectContent/_projectContent.html',{"bigImg":"bigImg" ,"pathImg":"./img/home/img_home_3.jpg", "titel":"busines card","category":"photo","description":"Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies."})
+                        @@include('./partials/projectContent/_projectContent.html',{"bigImg":"bigImg" ,"pathImg":"./img/home/img_home_1.jpg", "titel":"busines card","category":"photo","description":"Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies."})
+                        @@include('./partials/projectContent/_projectContent.html',{"bigImg":"bigImg" ,"pathImg":"./img/home/img_home_1.jpg", "titel":"busines card","category":"photo","description":"Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies."})
+                        @@include('./partials/projectContent/_projectContent.html',{"bigImg":"bigImg" ,"pathImg":"./img/home/img_home_2.jpg", "titel":"busines card","category":"photo","description":"Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies."})
+
+                    </div>
+                    
+                </main>
+            </div>
+            <div class="sub_menu">
+                @@include("./partials/sidebar/_sidebar.html")
+            </div>
+        </main>  
         @@include('./partials/footer/_footer.html')        
     </div>
 </body>
