@@ -4,8 +4,16 @@
 <body>
     <div class="wrapper">
         @@include('./partials/header/_header.html')
-        <main class="container">
-
+        <main class="two_column container">
+            <div class="main_container">
+                @@include('./partials/description-pages/_description-pages.html',{"titel":"Blog","description":"Etiam eget mi enim, non ultricies nisi voluptatem, illo inventore veritatis et quasi architecto beatae  vitae dicta sunt explicabo nemo enim ipsam voluptatem."})
+                <hr class="hr-seporator">
+ 
+                
+            </div>
+            <div class="sub_menu">
+                @@include("./partials/sidebar/_sidebar.html")
+            </div>
         </main>
         @@include('./partials/footer/_footer.html')        
     </div>

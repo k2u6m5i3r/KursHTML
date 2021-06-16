@@ -1,0 +1,30 @@
+.topic{
+    width: 210px;
+    
+    padding: 10px 10px;
+    text-decoration: none;
+    img{
+        //display: none;
+    }
+    &__content{
+        padding: 5px 20px 0px 20px;
+    }
+    &__titel{
+        padding: 5px 0;
+        text-transform: uppercase;
+        color: #474747;
+        font-size: 1.4rem;
+        font-weight: 800; 
+    }
+    &__category{
+        text-transform: uppercase;
+        color: #949393;
+    }
+    &__description{
+        font-size: 1rem;
+        color:#515151;
+        padding-top:  20px;
+    }
+
+  
+}
