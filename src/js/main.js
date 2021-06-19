@@ -269,3 +269,19 @@ btnEl.addEventListener('click', toggleMenu);
 // console.log('object.d = ' + object['d'])
 // console.log("object['d'] = " + object['d'])
 
+// создение докуметна из js
+var element = document.createElement('div');
+element.innerHTML = `<h2>New element</h2>
+<p> Sone text</p>
+<span>span</span>`
+//добавление стиля 
+element.classList.add('warning');
+
+element.style.backgroundColor = 'grey';
+
+document.body.appendChild(element); //вставили в последнее место
+// создение докуметна из js
+var element_2 = document.createElement('div');
+element_2.innerText = `вставка текста любого теги как обычный текст`
+
+document.body.appendChild(element_2); //вставили в последнее место
