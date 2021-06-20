@@ -1,15 +1,24 @@
 .menu-item {
     display: inline;
-
-    
-    
+    // position: relative;
+    border: 5px solid transparent;
     text-align: left;
     text-decoration: none;
+    padding-bottom: 5px;   
+    margin: 10px 0; 
+    &:before {
+        content: ''; 
+        position: absolute;
+        right: 45%; top: -20px;
+        border: 10px solid transparent; 
+        border-top: 10px solid grey; 
+    }
     &:hover{
+        border-bottom: 5px solid grey;
         position: relative;
-        top: 2px;
-        left: 2px;
-        opacity: 0.5;
+        // top: 2px;
+        // left: 2px;
+        // opacity: 0.5;
     }
     &__titel{
         // text-decoration: none;
@@ -22,6 +31,7 @@
         font-size: 1.6rem;
         text-align: center;
         color: #474747;
+        
     }
     p{
         padding: 0;
