@@ -3,6 +3,7 @@ body * {
 }
 
 .container{
+  display: none;
   margin: 0 auto;
   width: 600px;
 }
@@ -19,4 +20,51 @@ body * {
 .container p{
   margin: 0;
   padding: 0;
+}
+
+
+.container_2{
+  display: none;
+  margin: 0 auto;
+  width: 500px;
+}
+.imgFullContainter{
+
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  margin: 0 auto;
+  &__img{
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 30% 40%;
+    background-image: url(../img/snowman-3d-cute-banner-1612.jpg);
+    height: 100%;
+    width: 100%;
+  }
+}
+.container_3{
+  display: none;
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+ 
+}
+.circleImg{
+  height: 300px;
+  width: 300px;
+  &__img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-position: 60% 40%;
+    background-size: cover;
+    background-image: url('./img/snowman-3d-cute-banner-1612.jpg');
+  }
+  
+}
+.container_4{
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
 }
