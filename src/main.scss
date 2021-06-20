@@ -129,8 +129,10 @@ img:hover{
 /* Секция две колонки, для разделения контента и субменю */
 
 .two_column {
-  flex: 1 0 auto;
+  //flex: 1 0 auto;
   display: flex;
+  flex-direction: row;
+  align-items: stretch;
 
 }
 .main_container {
@@ -138,9 +140,12 @@ img:hover{
   
 
 }
+
+
 .sub_menu {
   padding: 0 15px;
   width: 230px;
+
 }
 .contact{
   &__intro{
