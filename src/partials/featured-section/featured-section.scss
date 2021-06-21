@@ -19,15 +19,13 @@
         padding: 35px 0 25px 0;
         color:#414141;
     }
-    &__a{
-        
+    &__a{  
         font-weight: 800;
         text-decoration:none;
         text-transform: uppercase;
         color: #474747;
     }
     &__a:before{
-        
         content: "\f101";
         padding: 0 10px 0 0;
         font-family: FontAwesome;

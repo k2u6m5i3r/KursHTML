@@ -6,7 +6,6 @@
 @import "./partials/our-work/our-work.scss";
 @import "./partials/team-staff/team-staff.scss";
 @import "./partials/post/post.scss";
-
 @import "./partials/footer/footer.scss";
 @import "./partials/header/header.scss";
 @import "./partials/sidebar/sidebar.scss";
@@ -14,7 +13,6 @@
 
 body * {
    //outline: 1px solid lightgrey;
-
 }
 body{
   background-color: rgb(255, 255, 255);
@@ -46,7 +44,6 @@ main {
 .hr-seporator {
 	margin: 0;
 	padding: 0 5px;
-  //width: 100%;
 	height: 5px;
 	border: none;
 	box-sizing: border-box;
@@ -60,45 +57,43 @@ main {
   width: 135px;
 }
 
-// img{
-//   filter: grayscale(1);
-// }
-// img:hover{
-//   filter: grayscale(0.55);
-// }
-
 /* Слайдер */
 .swiper-slide {
   position: relative;
   font-size: 18px;
   background: #fff;
-
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-
 }
-
 .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .swiper-container {
   margin-left: auto;
   margin-right: auto;
 }
 .swiper-pagination{
-
-  text-align: right;
+  position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: auto !important;
+	left: auto !important;
+	margin: 0;
 }
-.swiper-pagination-bullet{
-  color: #949494;
+.image-slider .swiper-pagination-bullet-active {
+	background: #ccd3db;
 }
-
+.image-slider .swiper-pagination-bullet{
+  padding: 0px 5px;
+	border-radius: 0;
+	width: 15px;
+	height: 10px;
+}
 .swiper-container a{
   text-align: left;
   background-color: #404040;
@@ -114,6 +109,7 @@ main {
   p{
     margin: 0 5px;
     padding: 0;
+    text-transform: uppercase;
   }
   span{
     margin: 0 5px;
@@ -136,7 +132,7 @@ main {
   }
 }
 /* Сдлайдер END*/
- 
+
 /* Секция три колонки */
 .tree-column{
   display: flex;
@@ -154,7 +150,6 @@ main {
   display: flex;
   justify-content: center;
   position: relative;
-
 }
 .OurCurrentProjects__name p{
   color: #474747;
@@ -165,7 +160,6 @@ main {
   z-index: 4;
   padding: 0 5px;
 }
-
 .OurCurrentProjects__name:before{
   content: '_';
   color: transparent;
@@ -174,7 +168,6 @@ main {
   bottom: 30px;
   width: 100%;
 }
-
 .OurCurrentProjects__content{
   display: flex;
   justify-content: space-between;
@@ -191,23 +184,16 @@ main {
 }
 .main_container {
   width: 720px;
-
-
 }
 .sub_menu {
   padding: 0 15px;
   width: 230px;
-
-  /* Landscape phones and portrait tablets */
   @media screen and (max-width: 767px) {
     .container{
       width: 480px;
-  
     }
     display: none;
   }
-  
-  /* Landscape phones and smaller */
   @media screen and (max-width: 480px) {
     
   }
@@ -220,8 +206,6 @@ main {
   }
   &__form{
     padding: 0px 5px;
-    //font-family: 'Nunito Sans', sans-serif;
-
     .form-style{
       display: block;
       margin-bottom: 12px;
@@ -233,11 +217,9 @@ main {
       text-transform: uppercase ;
       font-weight: 800;
     }
-
     #message::placeholder{
       text-transform: uppercase ;
       font-weight: 800;
-      
     }
     .btn{
       font-family: inherit;
@@ -266,24 +248,18 @@ main {
 }
 /*Work END*/
 @media screen and (max-width: 600px) {
-
-
   .container{
     width: 590px;
     margin: 0 auto;
   }
-  
-  }
+}
 
-/* Portrait tablets and medium desktops */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .container{
     width: 960px;
-
   }
 }
 
-/* Portrait tablets and small desktops */
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .container{
     width: 760px;
@@ -291,7 +267,6 @@ main {
   }
 }
 
-/* Landscape phones and portrait tablets */
 @media screen and (max-width: 767px) {
   .container{
     width: 480px;
@@ -299,7 +274,6 @@ main {
   }
 }
 
-/* Landscape phones and smaller */
 @media screen and (max-width: 480px) {
 
 }

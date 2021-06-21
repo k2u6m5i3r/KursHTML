@@ -1,6 +1,5 @@
 .menu-item {
     display: inline;
-    // position: relative;
     border: 5px solid transparent;
     text-align: left;
     text-decoration: none;
@@ -16,12 +15,8 @@
     &:hover{
         border-bottom: 5px solid grey;
         position: relative;
-        // top: 2px;
-        // left: 2px;
-        // opacity: 0.5;
     }
     &__titel{
-        // text-decoration: none;
         text-transform: uppercase;
         font-size: 1rem;
         color: #ababab;
@@ -31,7 +26,6 @@
         font-size: 1.6rem;
         text-align: center;
         color: #474747;
-        
     }
     p{
         padding: 0;
