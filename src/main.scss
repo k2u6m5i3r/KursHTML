@@ -12,8 +12,6 @@
 @import "./partials/sidebar/sidebar.scss";
 @import "./sprite.scss";
 
-// @import "./img/project/prjImg1.jpg"
-
 body * {
    //outline: 1px solid lightgrey;
 
@@ -22,7 +20,6 @@ body{
   background-color: rgb(255, 255, 255);
   height: 100%;
   background-image: url('./img/home-puzle100x100-oneKontrast.jpg');
-    
   background-repeat: repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -37,7 +34,6 @@ html,body {
   width: 960px;
   margin: 0 auto;
 }
-
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -64,33 +60,24 @@ main {
   width: 135px;
 }
 
-img{
-  filter: grayscale(1);
-}
-img:hover{
-  filter: grayscale(0.55);
-}
+// img{
+//   filter: grayscale(1);
+// }
+// img:hover{
+//   filter: grayscale(0.55);
+// }
 
 /* Слайдер */
 .swiper-slide {
   position: relative;
-  
   font-size: 18px;
   background: #fff;
 
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  // -webkit-box-pack: center;
-  // -ms-flex-pack: center;
-  // -webkit-justify-content: center;
-  // justify-content: center;
-  // -webkit-box-align: center;
-  // -ms-flex-align: center;
-  // -webkit-align-items: center;
-  // align-items: center;
+
 }
 
 .swiper-slide img {
@@ -149,17 +136,6 @@ img:hover{
   }
 }
 /* Сдлайдер END*/
-/* Описание слайдов */
-.sliderDescription{
-  background-color: #f6f6f6;
-  padding: 10px;
-  &__titel{
-    text-transform: uppercase;
-
-  }
-}
-
-/* Описание слайдов END*/
  
 /* Секция три колонки */
 .tree-column{
@@ -194,9 +170,8 @@ img:hover{
   content: '_';
   color: transparent;
   position: absolute;
-
   background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="3px" height="3px" viewBox="0 0 3 3" fill="grey"><polygon points="0,0.5 0,1.5 1.5,3 2.5,3"></polygon><polygon points="2.5,0 1.5,0 3,1.5 3,0.5"></polygon></svg>');
-  bottom: 25px;
+  bottom: 30px;
   width: 100%;
 }
 
@@ -208,25 +183,34 @@ img:hover{
 /* секция четыре колонки OurCurrentProjects END*/
 
 /* Секция две колонки, для разделения контента и субменю */
-
 .two_column {
   //flex: 1 0 auto;
   display: flex;
   flex-direction: row;
   align-items: stretch;
-
 }
 .main_container {
   width: 720px;
-  
+
 
 }
-
-
 .sub_menu {
   padding: 0 15px;
   width: 230px;
 
+  /* Landscape phones and portrait tablets */
+  @media screen and (max-width: 767px) {
+    .container{
+      width: 480px;
+  
+    }
+    display: none;
+  }
+  
+  /* Landscape phones and smaller */
+  @media screen and (max-width: 480px) {
+    
+  }
 }
 .contact{
   &__intro{
@@ -277,12 +261,13 @@ img:hover{
   display: flex;
   flex-wrap: wrap;
 }
+.filt__category{
+  padding: 10px;
+}
 /*Work END*/
 @media screen and (max-width: 600px) {
 
-  .slickSlider{
-    display: none;
-  }
+
   .container{
     width: 590px;
     margin: 0 auto;
@@ -318,4 +303,3 @@ img:hover{
 @media screen and (max-width: 480px) {
 
 }
-// Footer END

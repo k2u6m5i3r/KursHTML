@@ -1,14 +1,22 @@
 .post{
     margin-top: 30px;
     padding: 5px;
-
+    a{
+        text-decoration: none;
+        cursor: pointer;
+    }
     &__titel{
         h2{
             text-transform: uppercase;
+            
+            color: #464646;
         }
+
     }
     &__img{
-
+        height: 300px;
+        width: 100%;
+        background-repeat: no-repeat;
     }
     &__content{
         display: flex;

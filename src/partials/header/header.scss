@@ -1,6 +1,5 @@
 .header{
-    // padding: 10px;
-    // box-sizing: border-box;
+
     border-top: 5px solid grey;
     &__baner{
       display: flex;
@@ -21,5 +20,18 @@
       flex-wrap: wrap;
       justify-content: space-between;
     }
+
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      
+    }
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      height: 200px;
+    }
+
+    @media screen and (max-width: 767px) {
+      height: 300px;
+    }
+
+
   
   }
